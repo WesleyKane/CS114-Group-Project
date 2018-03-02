@@ -16,5 +16,11 @@ namespace Arcade
         {
             InitializeComponent();
         }
-    }
+		int counter = 0;
+		private void PushMe_Click(object sender, EventArgs e)
+		{
+			counter++;
+			title.Text = $"You have clicked {counter} times";
+		}
+	}
 }
