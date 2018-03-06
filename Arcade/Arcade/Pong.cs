@@ -43,6 +43,27 @@ namespace Arcade
 
         }
 
+        private void keyisup(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)//Changes the up Bool to false if the player presses the up button
+            {
+                GoUp2 = false;
+            }
+            else if (e.KeyCode == Keys.Down)//Changes the down bool to false if the player presses the down button
+            {
+                GoDown2 = false;
+            }
+            if (e.KeyCode == Keys.W)//Changes the up Bool to false if player1 presses the W key
+            {
+                GoUp1 = false;
+            }
+
+            else if (e.KeyCode == Keys.S)//Changes the down bool to false if the player presses the down button
+            {
+                GoDown1 = false;
+            }
+        }
+
         private void keyisdown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.W)//Changes the up Bool to true if the player1 presses the up button
@@ -62,27 +83,7 @@ namespace Arcade
                 GoDown2 = true;
             }
         }
-
-        private void keyisup(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Up)//Changes the up Bool to false if the player presses the up button
-            {
-                GoUp2 = false;
-            }
-            if (e.KeyCode == Keys.W)//Changes the up Bool to false if player1 presses the W key
-            {
-                GoUp1 = false;
-            }
-            if (e.KeyCode == Keys.Down )//Changes the down bool to false if the player presses the down button
-            {
-                GoDown2 = false;
-            }
-            if (e.KeyCode == Keys.S)//Changes the down bool to false if the player presses the down button
-            {
-                GoDown1 = false;
-            }
-        }
-
+        
         private void GameTimer_Tick(object sender, EventArgs e)
         {
             Player1Score.Text = "" + Score1;//shows the score for player 1
@@ -126,12 +127,14 @@ namespace Arcade
                 Player2.Top -= 8;
             }
 
-            if (GoDown1 == true & Player1.Top < 455)//allows player1 to move up
+            if (GoDown1 == true & Player1.Top < 613)//allows player1 to move down
             {
+                GoUp2 = false;
                 Player1.Top += 8;
-            } 
-            if (GoDown2 == true & Player2.Top < 455)//allows player2 to move up
+            }
+            if (GoDown2 == true & Player2.Top < 613)//allows player2 to move down
             {
+                GoUp2 = false;
                 Player2.Top += 8;
             }
         }
