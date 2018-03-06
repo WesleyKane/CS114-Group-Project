@@ -46,6 +46,7 @@
             this.Player1.Location = new System.Drawing.Point(12, 185);
             this.Player1.Name = "Player1";
             this.Player1.Size = new System.Drawing.Size(27, 127);
+            this.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Player1.TabIndex = 0;
             this.Player1.TabStop = false;
             this.Player1.Click += new System.EventHandler(this.Player1_Click);
@@ -56,6 +57,7 @@
             this.Player2.Location = new System.Drawing.Point(897, 185);
             this.Player2.Name = "Player2";
             this.Player2.Size = new System.Drawing.Size(27, 127);
+            this.Player2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Player2.TabIndex = 1;
             this.Player2.TabStop = false;
             this.Player2.Click += new System.EventHandler(this.Player2_Click);

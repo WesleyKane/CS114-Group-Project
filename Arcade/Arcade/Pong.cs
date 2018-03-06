@@ -17,10 +17,9 @@ namespace Arcade
         bool GoUp2;//Bool top determine whether player2 wants to go up or not
         bool GoDown1;//Bool to determine whether the player wants to go down or not
         bool GoDown2;//Bool to determine whether the player2 wants to go up or not
-        int speed = 5;
         int ballx = 5;//Horizontal X xpeed value for the ball object
         int bally = 5;//Vertical Y speed value for the ball object
-        int Score1 = 0;//Scpre for player 1
+        int Score1 = 0;//Score for player 1
         int Score2 = 0;//Score for player 2
 
         public Pong()
@@ -70,18 +69,19 @@ namespace Arcade
             {
                 GoUp1 = true;
             }
+            if (e.KeyCode == Keys.S)//Changes the down bool to true if the player2 presses the S button
+            {
+                GoDown1 = true;
+            }
             if (e.KeyCode == Keys.Up )//Changes the up Bool to true if the player2 presses the up button
             {
                 GoUp2 = true;
             }
             if (e.KeyCode == Keys.Down)//Changes the down bool to true if the player1 presses the down button
             {
-                GoDown1 = true;
-            }
-            if (e.KeyCode == Keys.S)//Changes the down bool to true if the player2 presses the S button
-            {
                 GoDown2 = true;
             }
+           
         }
         
         private void GameTimer_Tick(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace Arcade
             {
                 ball.Left = 434;//Resets the ball to the middle of the screen
                 ballx = -ballx;//Changes the direction of the ball
-                ballx += 2; //Increases the speed of the ball
+               ballx += 2; //Increases the speed of the ball
                 Score1++;//adds one to player1 score
             }
 
@@ -127,15 +127,25 @@ namespace Arcade
                 Player2.Top -= 8;
             }
 
-            if (GoDown1 == true & Player1.Top < 613)//allows player1 to move down
+            if (GoDown2 == true & Player1.Top < 455)//allows player1 to move down
             {
-                GoUp2 = false;
+                
+                Player2.Top += 8;
+            }
+            if (GoDown1 == true & Player2.Top < 455)//allows player2 to move down
+            {
                 Player1.Top += 8;
             }
-            if (GoDown2 == true & Player2.Top < 613)//allows player2 to move down
+
+            if (Score1 > 10)//IF player 1 scores 10 points then player1 wins
             {
-                GoUp2 = false;
-                Player2.Top += 8;
+                GameTimer.Stop();
+                MessageBox.Show("Player 1 wins!");
+            }
+            if (Score2 > 10)//If player 2 wins then player 2 wins
+            {
+                GameTimer.Stop();
+                MessageBox.Show("Player 2 wins!");
             }
         }
     }
