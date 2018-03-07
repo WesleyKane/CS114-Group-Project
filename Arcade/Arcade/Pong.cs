@@ -17,8 +17,8 @@ namespace Arcade
         bool GoUp2;//Bool top determine whether player2 wants to go up or not
         bool GoDown1;//Bool to determine whether the player wants to go down or not
         bool GoDown2;//Bool to determine whether the player2 wants to go up or not
-        int ballx = 5;//Horizontal X xpeed value for the ball object
-        int bally = 5;//Vertical Y speed value for the ball object
+        int ballx = 5;//Horizontal X axis speed value for the ball object
+        int bally = 5;//Vertical Y axis speed value for the ball object
         int Score1 = 0;//Score for player 1
         int Score2 = 0;//Score for player 2
 
