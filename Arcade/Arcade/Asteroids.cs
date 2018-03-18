@@ -12,15 +12,26 @@ namespace Arcade
 {
     public partial class Asteroids : Form
     {
-        int facingDirection;
-        PictureBox spaceShipImage = new PictureBox();
+        int facingDirection, bulletDirection;
+        PictureBox spaceShipImage = new PictureBox(); // test123
         PictureBox[] asteroidsImage = new PictureBox[5]; // setitng up array for asteroid images.
         PictureBox missleImage = new PictureBox();
         bool fire = false;
         int[,] coordAsteroids = { { -100, 950 }, { -100, -100 }, { 1700, 500 }, { 1700, -100 }, { 1650, 1400 } }; // sets coordinated for each asteroids. Some are off screen to simulate the astoeroids flying in.
 
 
+        //public PictureBox GetPictureBoxClone()
+        //{
+        //    PictureBox pb = new PictureBox();
 
+        //    //Copy properties 
+        //    pb.Size = missleImage.Size;
+        //    pb.BackColor = missleImage.BackColor;
+        //    pb.BackgroundImage = missleImage.BackgroundImage;
+
+        //    return pb;
+
+        //}
         public Asteroids()
         {
             InitializeComponent();
@@ -137,26 +148,39 @@ namespace Arcade
                 asteroidsImage[4].Left -= 7;
                 asteroidsImage[4].Top -= 4;
             }
+
+            for(int i = 0; i < 5; i ++) // if one of 5 asteroids hits the ship.
+            {
+                if(asteroidsImage[i].Bounds.IntersectsWith(spaceShipImage.Bounds) && asteroidsImage[i].Visible == true) // uses bounds/intersection.
+                {
+                    asteroidsImage[i].Visible = false;
+                    spaceShipImage.Visible = false;
+                    MessageBox.Show("Game over!");
+                }
+            }
         }
 
         void missleTimer_Tick(object sender, EventArgs e)
         {
+            
             if (!fire)
             {
                 missleImage.BackColor = Color.Red;
                 MissleStartPosition();
                 missleImage.Size = new Size(10, 10);
-                Controls.Add(missleImage);
+                Controls.Add(missleImage);              
                 fire = true;
+                
             }
             MissleMovement();
+            MissleHitDetection();
         }
 
 
 
         void ShipMoveEvent(object sender, KeyEventArgs e) // when keys are pressed to rotate ship.
         {
-            this.Focus();
+            //this.Focus();
             switch (e.KeyCode) // gets key argument.
             {
 
@@ -184,13 +208,11 @@ namespace Arcade
                 //Rotation ship movement
                 case Keys.Left:
 
-
                     spaceShipImage.Image.RotateFlip(RotateFlipType.Rotate270FlipNone);
                     spaceShipImage.Refresh();
-                    if (facingDirection <= 0)
+                    if (facingDirection == 0)
                     {
-                        facingDirection = 0;
-
+                        facingDirection = 3;
                     }
                     else
                     {
@@ -202,9 +224,9 @@ namespace Arcade
 
                     spaceShipImage.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
                     spaceShipImage.Refresh();
-                    if (facingDirection >= 3)
+                    if (facingDirection == 3)
                     {
-                        facingDirection = 3;
+                        facingDirection = 0;
 
                     }
                     else
@@ -219,13 +241,15 @@ namespace Arcade
         }
         void MissleMovement()
         {
+            //bulletDirection = facingDirection; // THIS IS WHAT WAS SCREWING ME UP!!!!!!!!!!!!
 
-            switch (facingDirection)
+            switch (bulletDirection)
             {
                 case 0:
                     if (missleImage.Bottom >= 0)
                     {
                         missleImage.Top -= 5;
+                        
                     }
                     else
                     {
@@ -277,13 +301,17 @@ namespace Arcade
                     }
                     break;
             }
+            
+
+
 
         }
         void MissleStartPosition() // start position.
         {
             if (!fire)
             {
-                switch (facingDirection)
+                bulletDirection = facingDirection;
+                switch (bulletDirection) // sets the start position of missle depending on facing direction.
                 {
                     case 0:
                         missleImage.Top = spaceShipImage.Top;
@@ -302,6 +330,23 @@ namespace Arcade
                         missleImage.Left = spaceShipImage.Left;
                         break;
 
+                }
+            }
+        }
+
+        void MissleHitDetection() // if the missle comes into intersection contact with an asteroid image...
+        {
+            if(fire) // if a missle fires..
+            {
+                for(int i = 0; i < 5; i++)
+                {
+                    if(missleImage.Bounds.IntersectsWith(asteroidsImage[i].Bounds) && asteroidsImage[i].Visible == true)
+                    {
+                        asteroidsImage[i].Visible = false;
+                        fire = false;
+                        missleTimer.Enabled = false;
+                        Controls.Remove(missleImage);
+                    }
                 }
             }
         }
