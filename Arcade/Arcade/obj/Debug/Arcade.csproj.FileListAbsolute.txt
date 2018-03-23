@@ -28,3 +28,13 @@ C:\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arc
 C:\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.csproj.GenerateResource.Cache
 C:\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.exe
 C:\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.pdb
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\bin\Debug\Arcade.exe.config
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\bin\Debug\Arcade.exe
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\bin\Debug\Arcade.pdb
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.csprojResolveAssemblyReference.cache
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.Asteroids.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.MainMenu.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.Properties.Resources.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.csproj.GenerateResource.Cache
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.exe
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\Wesley first branch\Arcade\Arcade\obj\Debug\Arcade.pdb

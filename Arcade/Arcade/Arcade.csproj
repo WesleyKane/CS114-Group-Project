@@ -121,5 +121,29 @@
   <ItemGroup>
     <None Include="Resources\ship2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space backround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space backround1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astHit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
