@@ -35,13 +35,18 @@
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.Player1Score = new System.Windows.Forms.Label();
             this.Player2Score = new System.Windows.Forms.Label();
+            this.B1 = new System.Windows.Forms.PictureBox();
+            this.B2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B2)).BeginInit();
             this.SuspendLayout();
             // 
             // Player1
             // 
+            this.Player1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Player1.BackColor = System.Drawing.SystemColors.Window;
             this.Player1.Location = new System.Drawing.Point(12, 185);
             this.Player1.Name = "Player1";
@@ -53,6 +58,7 @@
             // 
             // Player2
             // 
+            this.Player2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Player2.BackColor = System.Drawing.Color.White;
             this.Player2.Location = new System.Drawing.Point(897, 185);
             this.Player2.Name = "Player2";
@@ -64,6 +70,7 @@
             // 
             // ball
             // 
+            this.ball.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ball.BackColor = System.Drawing.Color.White;
             this.ball.Location = new System.Drawing.Point(434, 239);
             this.ball.Name = "ball";
@@ -79,27 +86,51 @@
             // 
             // Player1Score
             // 
+            this.Player1Score.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player1Score.AutoSize = true;
             this.Player1Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player1Score.Location = new System.Drawing.Point(394, 57);
+            this.Player1Score.Location = new System.Drawing.Point(421, 74);
             this.Player1Score.Name = "Player1Score";
-            this.Player1Score.Size = new System.Drawing.Size(34, 25);
+            this.Player1Score.Size = new System.Drawing.Size(23, 25);
             this.Player1Score.TabIndex = 3;
-            this.Player1Score.Text = "00";
+            this.Player1Score.Text = "0";
+            this.Player1Score.Click += new System.EventHandler(this.Player1Score_Click);
             // 
             // Player2Score
             // 
+            this.Player2Score.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player2Score.AutoSize = true;
             this.Player2Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player2Score.Location = new System.Drawing.Point(456, 57);
+            this.Player2Score.Location = new System.Drawing.Point(483, 74);
             this.Player2Score.Name = "Player2Score";
-            this.Player2Score.Size = new System.Drawing.Size(34, 25);
+            this.Player2Score.Size = new System.Drawing.Size(23, 25);
             this.Player2Score.TabIndex = 4;
-            this.Player2Score.Text = "00";
+            this.Player2Score.Text = "0";
+            this.Player2Score.Click += new System.EventHandler(this.Player2Score_Click);
+            // 
+            // B1
+            // 
+            this.B1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.B1.BackColor = System.Drawing.Color.DarkRed;
+            this.B1.Location = new System.Drawing.Point(12, 239);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(27, 26);
+            this.B1.TabIndex = 5;
+            this.B1.TabStop = false;
+            // 
+            // B2
+            // 
+            this.B2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.B2.BackColor = System.Drawing.Color.DarkRed;
+            this.B2.Location = new System.Drawing.Point(897, 239);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(27, 26);
+            this.B2.TabIndex = 6;
+            this.B2.TabStop = false;
             // 
             // Pong
             // 
@@ -107,6 +138,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(935, 566);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.B1);
             this.Controls.Add(this.ball);
             this.Controls.Add(this.Player2Score);
             this.Controls.Add(this.Player1Score);
@@ -120,6 +153,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +168,7 @@
         private System.Windows.Forms.Timer GameTimer;
         private System.Windows.Forms.Label Player1Score;
         private System.Windows.Forms.Label Player2Score;
+        private System.Windows.Forms.PictureBox B1;
+        private System.Windows.Forms.PictureBox B2;
     }
 }
