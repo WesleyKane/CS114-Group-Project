@@ -31,8 +31,8 @@ namespace Arcade
         //Main menu buttons
         private void Pacman_Click(object sender, EventArgs e) //Open pacman form (button)
         {
-            Pacman pacman = new Pacman();
-            pacman.Show();
+            Frogger frogger = new Frogger();
+            frogger.Show();
         }
 
         private void Asteroids_Click(object sender, EventArgs e) // open steroids form (button)

@@ -18,3 +18,14 @@ C:\Users\jacob\Source\Repos\CS114-Group-Project2\Arcade\Arcade\obj\Debug\Arcade.
 C:\Users\jacob\Source\Repos\CS114-Group-Project2\Arcade\Arcade\obj\Debug\Arcade.exe
 C:\Users\jacob\Source\Repos\CS114-Group-Project2\Arcade\Arcade\obj\Debug\Arcade.pdb
 C:\Users\jacob\Source\Repos\CS114-Group-Project2\Arcade\Arcade\obj\Debug\Arcade.Pacman.resources
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.exe.config
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.exe
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.pdb
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.csprojResolveAssemblyReference.cache
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.MainMenu.resources
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Frogger.resources
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Properties.Resources.resources
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.csproj.GenerateResource.Cache
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.csproj.CoreCompileInputs.cache
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.exe
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.pdb

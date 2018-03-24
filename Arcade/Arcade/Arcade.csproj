@@ -63,11 +63,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacman.cs">
+    <Compile Include="Frogger.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacman.Designer.cs">
-      <DependentUpon>Pacman.cs</DependentUpon>
+    <Compile Include="Frogger.Designer.cs">
+      <DependentUpon>Frogger.cs</DependentUpon>
     </Compile>
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
@@ -80,8 +80,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacman.resx">
-      <DependentUpon>Pacman.cs</DependentUpon>
+    <EmbeddedResource Include="Frogger.resx">
+      <DependentUpon>Frogger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
