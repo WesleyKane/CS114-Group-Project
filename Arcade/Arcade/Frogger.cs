@@ -55,7 +55,7 @@ namespace Arcade
                         Frog.Location = new Point(450, 600);
                         lifeLeft--;
                         label1.Text = $"Lives: {lifeLeft}";
-                    }             
+                    }
                 }
             }
             if (lifeLeft == 0)
@@ -188,6 +188,7 @@ namespace Arcade
             foreach (var PB in this.Controls.OfType<PictureBox>()) {
                 if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name != "Frog")
                 {
+                    //If the frog is on a log or turtle move with it
                     switch (Frog.Location.Y)
                     {
                         case 250:

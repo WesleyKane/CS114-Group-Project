@@ -54,29 +54,23 @@
             this.row1_2 = new System.Windows.Forms.PictureBox();
             this.bigLog2 = new System.Windows.Forms.PictureBox();
             this.bigLog1 = new System.Windows.Forms.PictureBox();
-            this.turtle9_3 = new System.Windows.Forms.PictureBox();
             this.turtle8_3 = new System.Windows.Forms.PictureBox();
             this.turtle7_3 = new System.Windows.Forms.PictureBox();
             this.turtle6_3 = new System.Windows.Forms.PictureBox();
-            this.turtle5_3 = new System.Windows.Forms.PictureBox();
             this.turtle4_3 = new System.Windows.Forms.PictureBox();
             this.turtle3_3 = new System.Windows.Forms.PictureBox();
-            this.turtle9_2 = new System.Windows.Forms.PictureBox();
             this.turtle2_3 = new System.Windows.Forms.PictureBox();
             this.turtle8_2 = new System.Windows.Forms.PictureBox();
             this.turtle1_3 = new System.Windows.Forms.PictureBox();
             this.turtle7_2 = new System.Windows.Forms.PictureBox();
             this.turtle6_2 = new System.Windows.Forms.PictureBox();
-            this.turtle5_2 = new System.Windows.Forms.PictureBox();
             this.turtle4_2 = new System.Windows.Forms.PictureBox();
             this.turtle3_2 = new System.Windows.Forms.PictureBox();
-            this.turtle9_1 = new System.Windows.Forms.PictureBox();
             this.turtle2_2 = new System.Windows.Forms.PictureBox();
             this.turtle8_1 = new System.Windows.Forms.PictureBox();
             this.turtle1_2 = new System.Windows.Forms.PictureBox();
             this.turtle7_1 = new System.Windows.Forms.PictureBox();
             this.turtle6_1 = new System.Windows.Forms.PictureBox();
-            this.turtle5_1 = new System.Windows.Forms.PictureBox();
             this.turtle4_1 = new System.Windows.Forms.PictureBox();
             this.turtle3_1 = new System.Windows.Forms.PictureBox();
             this.turtle2_1 = new System.Windows.Forms.PictureBox();
@@ -125,29 +119,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.row1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bigLog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bigLog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle1_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_1)).BeginInit();
@@ -401,23 +389,12 @@
             this.bigLog1.TabIndex = 66;
             this.bigLog1.TabStop = false;
             // 
-            // turtle9_3
-            // 
-            this.turtle9_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle9_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle9_3.BackgroundImage")));
-            this.turtle9_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle9_3.Location = new System.Drawing.Point(841, 200);
-            this.turtle9_3.Name = "turtle9_3";
-            this.turtle9_3.Size = new System.Drawing.Size(50, 50);
-            this.turtle9_3.TabIndex = 60;
-            this.turtle9_3.TabStop = false;
-            // 
             // turtle8_3
             // 
             this.turtle8_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle8_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle8_3.BackgroundImage")));
             this.turtle8_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle8_3.Location = new System.Drawing.Point(598, 200);
+            this.turtle8_3.Location = new System.Drawing.Point(817, 200);
             this.turtle8_3.Name = "turtle8_3";
             this.turtle8_3.Size = new System.Drawing.Size(50, 50);
             this.turtle8_3.TabIndex = 59;
@@ -428,7 +405,7 @@
             this.turtle7_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle7_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle7_3.BackgroundImage")));
             this.turtle7_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle7_3.Location = new System.Drawing.Point(371, 200);
+            this.turtle7_3.Location = new System.Drawing.Point(436, 200);
             this.turtle7_3.Name = "turtle7_3";
             this.turtle7_3.Size = new System.Drawing.Size(50, 50);
             this.turtle7_3.TabIndex = 58;
@@ -445,23 +422,12 @@
             this.turtle6_3.TabIndex = 57;
             this.turtle6_3.TabStop = false;
             // 
-            // turtle5_3
-            // 
-            this.turtle5_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle5_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle5_3.BackgroundImage")));
-            this.turtle5_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle5_3.Location = new System.Drawing.Point(960, 100);
-            this.turtle5_3.Name = "turtle5_3";
-            this.turtle5_3.Size = new System.Drawing.Size(50, 50);
-            this.turtle5_3.TabIndex = 56;
-            this.turtle5_3.TabStop = false;
-            // 
             // turtle4_3
             // 
             this.turtle4_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_3.BackgroundImage")));
             this.turtle4_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_3.Location = new System.Drawing.Point(741, 100);
+            this.turtle4_3.Location = new System.Drawing.Point(957, 100);
             this.turtle4_3.Name = "turtle4_3";
             this.turtle4_3.Size = new System.Drawing.Size(50, 50);
             this.turtle4_3.TabIndex = 55;
@@ -472,29 +438,18 @@
             this.turtle3_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle3_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle3_3.BackgroundImage")));
             this.turtle3_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle3_3.Location = new System.Drawing.Point(489, 100);
+            this.turtle3_3.Location = new System.Drawing.Point(657, 100);
             this.turtle3_3.Name = "turtle3_3";
             this.turtle3_3.Size = new System.Drawing.Size(50, 50);
             this.turtle3_3.TabIndex = 54;
             this.turtle3_3.TabStop = false;
-            // 
-            // turtle9_2
-            // 
-            this.turtle9_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle9_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle9_2.BackgroundImage")));
-            this.turtle9_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle9_2.Location = new System.Drawing.Point(791, 200);
-            this.turtle9_2.Name = "turtle9_2";
-            this.turtle9_2.Size = new System.Drawing.Size(50, 50);
-            this.turtle9_2.TabIndex = 53;
-            this.turtle9_2.TabStop = false;
             // 
             // turtle2_3
             // 
             this.turtle2_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle2_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle2_3.BackgroundImage")));
             this.turtle2_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle2_3.Location = new System.Drawing.Point(294, 100);
+            this.turtle2_3.Location = new System.Drawing.Point(386, 100);
             this.turtle2_3.Name = "turtle2_3";
             this.turtle2_3.Size = new System.Drawing.Size(50, 50);
             this.turtle2_3.TabIndex = 52;
@@ -505,7 +460,7 @@
             this.turtle8_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle8_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle8_2.BackgroundImage")));
             this.turtle8_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle8_2.Location = new System.Drawing.Point(548, 200);
+            this.turtle8_2.Location = new System.Drawing.Point(767, 200);
             this.turtle8_2.Name = "turtle8_2";
             this.turtle8_2.Size = new System.Drawing.Size(50, 50);
             this.turtle8_2.TabIndex = 50;
@@ -527,7 +482,7 @@
             this.turtle7_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle7_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle7_2.BackgroundImage")));
             this.turtle7_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle7_2.Location = new System.Drawing.Point(321, 200);
+            this.turtle7_2.Location = new System.Drawing.Point(386, 200);
             this.turtle7_2.Name = "turtle7_2";
             this.turtle7_2.Size = new System.Drawing.Size(50, 50);
             this.turtle7_2.TabIndex = 61;
@@ -544,23 +499,12 @@
             this.turtle6_2.TabIndex = 49;
             this.turtle6_2.TabStop = false;
             // 
-            // turtle5_2
-            // 
-            this.turtle5_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle5_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle5_2.BackgroundImage")));
-            this.turtle5_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle5_2.Location = new System.Drawing.Point(910, 100);
-            this.turtle5_2.Name = "turtle5_2";
-            this.turtle5_2.Size = new System.Drawing.Size(50, 50);
-            this.turtle5_2.TabIndex = 37;
-            this.turtle5_2.TabStop = false;
-            // 
             // turtle4_2
             // 
             this.turtle4_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_2.BackgroundImage")));
             this.turtle4_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_2.Location = new System.Drawing.Point(691, 100);
+            this.turtle4_2.Location = new System.Drawing.Point(907, 100);
             this.turtle4_2.Name = "turtle4_2";
             this.turtle4_2.Size = new System.Drawing.Size(50, 50);
             this.turtle4_2.TabIndex = 38;
@@ -571,29 +515,18 @@
             this.turtle3_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle3_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle3_2.BackgroundImage")));
             this.turtle3_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle3_2.Location = new System.Drawing.Point(439, 100);
+            this.turtle3_2.Location = new System.Drawing.Point(607, 100);
             this.turtle3_2.Name = "turtle3_2";
             this.turtle3_2.Size = new System.Drawing.Size(50, 50);
             this.turtle3_2.TabIndex = 40;
             this.turtle3_2.TabStop = false;
-            // 
-            // turtle9_1
-            // 
-            this.turtle9_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle9_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle9_1.BackgroundImage")));
-            this.turtle9_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle9_1.Location = new System.Drawing.Point(741, 200);
-            this.turtle9_1.Name = "turtle9_1";
-            this.turtle9_1.Size = new System.Drawing.Size(50, 50);
-            this.turtle9_1.TabIndex = 36;
-            this.turtle9_1.TabStop = false;
             // 
             // turtle2_2
             // 
             this.turtle2_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle2_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle2_2.BackgroundImage")));
             this.turtle2_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle2_2.Location = new System.Drawing.Point(244, 100);
+            this.turtle2_2.Location = new System.Drawing.Point(336, 100);
             this.turtle2_2.Name = "turtle2_2";
             this.turtle2_2.Size = new System.Drawing.Size(50, 50);
             this.turtle2_2.TabIndex = 35;
@@ -604,7 +537,7 @@
             this.turtle8_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle8_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle8_1.BackgroundImage")));
             this.turtle8_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle8_1.Location = new System.Drawing.Point(498, 200);
+            this.turtle8_1.Location = new System.Drawing.Point(717, 200);
             this.turtle8_1.Name = "turtle8_1";
             this.turtle8_1.Size = new System.Drawing.Size(50, 50);
             this.turtle8_1.TabIndex = 39;
@@ -626,7 +559,7 @@
             this.turtle7_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle7_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle7_1.BackgroundImage")));
             this.turtle7_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle7_1.Location = new System.Drawing.Point(271, 200);
+            this.turtle7_1.Location = new System.Drawing.Point(336, 200);
             this.turtle7_1.Name = "turtle7_1";
             this.turtle7_1.Size = new System.Drawing.Size(50, 50);
             this.turtle7_1.TabIndex = 48;
@@ -643,23 +576,12 @@
             this.turtle6_1.TabIndex = 43;
             this.turtle6_1.TabStop = false;
             // 
-            // turtle5_1
-            // 
-            this.turtle5_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.turtle5_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle5_1.BackgroundImage")));
-            this.turtle5_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle5_1.Location = new System.Drawing.Point(860, 100);
-            this.turtle5_1.Name = "turtle5_1";
-            this.turtle5_1.Size = new System.Drawing.Size(50, 50);
-            this.turtle5_1.TabIndex = 44;
-            this.turtle5_1.TabStop = false;
-            // 
             // turtle4_1
             // 
             this.turtle4_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_1.BackgroundImage")));
             this.turtle4_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_1.Location = new System.Drawing.Point(641, 100);
+            this.turtle4_1.Location = new System.Drawing.Point(857, 100);
             this.turtle4_1.Name = "turtle4_1";
             this.turtle4_1.Size = new System.Drawing.Size(50, 50);
             this.turtle4_1.TabIndex = 45;
@@ -670,7 +592,7 @@
             this.turtle3_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle3_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle3_1.BackgroundImage")));
             this.turtle3_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle3_1.Location = new System.Drawing.Point(389, 100);
+            this.turtle3_1.Location = new System.Drawing.Point(557, 100);
             this.turtle3_1.Name = "turtle3_1";
             this.turtle3_1.Size = new System.Drawing.Size(50, 50);
             this.turtle3_1.TabIndex = 46;
@@ -681,7 +603,7 @@
             this.turtle2_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle2_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle2_1.BackgroundImage")));
             this.turtle2_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle2_1.Location = new System.Drawing.Point(194, 100);
+            this.turtle2_1.Location = new System.Drawing.Point(286, 100);
             this.turtle2_1.Name = "turtle2_1";
             this.turtle2_1.Size = new System.Drawing.Size(50, 50);
             this.turtle2_1.TabIndex = 47;
@@ -934,29 +856,23 @@
             this.Controls.Add(this.row1_2);
             this.Controls.Add(this.bigLog2);
             this.Controls.Add(this.bigLog1);
-            this.Controls.Add(this.turtle9_3);
             this.Controls.Add(this.turtle8_3);
             this.Controls.Add(this.turtle7_3);
             this.Controls.Add(this.turtle6_3);
-            this.Controls.Add(this.turtle5_3);
             this.Controls.Add(this.turtle4_3);
             this.Controls.Add(this.turtle3_3);
-            this.Controls.Add(this.turtle9_2);
             this.Controls.Add(this.turtle2_3);
             this.Controls.Add(this.turtle8_2);
             this.Controls.Add(this.turtle1_3);
             this.Controls.Add(this.turtle7_2);
             this.Controls.Add(this.turtle6_2);
-            this.Controls.Add(this.turtle5_2);
             this.Controls.Add(this.turtle4_2);
             this.Controls.Add(this.turtle3_2);
-            this.Controls.Add(this.turtle9_1);
             this.Controls.Add(this.turtle2_2);
             this.Controls.Add(this.turtle8_1);
             this.Controls.Add(this.turtle1_2);
             this.Controls.Add(this.turtle7_1);
             this.Controls.Add(this.turtle6_1);
-            this.Controls.Add(this.turtle5_1);
             this.Controls.Add(this.turtle4_1);
             this.Controls.Add(this.turtle3_1);
             this.Controls.Add(this.turtle2_1);
@@ -1000,29 +916,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.row1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bigLog2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bigLog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle1_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle9_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle8_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle7_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle6_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turtle5_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle4_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle3_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turtle2_1)).EndInit();
@@ -1075,29 +985,23 @@
         private System.Windows.Forms.PictureBox row1_2;
         private System.Windows.Forms.PictureBox bigLog2;
         private System.Windows.Forms.PictureBox bigLog1;
-        private System.Windows.Forms.PictureBox turtle9_3;
         private System.Windows.Forms.PictureBox turtle8_3;
         private System.Windows.Forms.PictureBox turtle7_3;
         private System.Windows.Forms.PictureBox turtle6_3;
-        private System.Windows.Forms.PictureBox turtle5_3;
         private System.Windows.Forms.PictureBox turtle4_3;
         private System.Windows.Forms.PictureBox turtle3_3;
-        private System.Windows.Forms.PictureBox turtle9_2;
         private System.Windows.Forms.PictureBox turtle2_3;
         private System.Windows.Forms.PictureBox turtle8_2;
         private System.Windows.Forms.PictureBox turtle1_3;
         private System.Windows.Forms.PictureBox turtle7_2;
         private System.Windows.Forms.PictureBox turtle6_2;
-        private System.Windows.Forms.PictureBox turtle5_2;
         private System.Windows.Forms.PictureBox turtle4_2;
         private System.Windows.Forms.PictureBox turtle3_2;
-        private System.Windows.Forms.PictureBox turtle9_1;
         private System.Windows.Forms.PictureBox turtle2_2;
         private System.Windows.Forms.PictureBox turtle8_1;
         private System.Windows.Forms.PictureBox turtle1_2;
         private System.Windows.Forms.PictureBox turtle7_1;
         private System.Windows.Forms.PictureBox turtle6_1;
-        private System.Windows.Forms.PictureBox turtle5_1;
         private System.Windows.Forms.PictureBox turtle4_1;
         private System.Windows.Forms.PictureBox turtle3_1;
         private System.Windows.Forms.PictureBox turtle2_1;
