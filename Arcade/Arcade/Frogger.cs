@@ -16,6 +16,12 @@ namespace Arcade
         public Frogger()
         {
             InitializeComponent();
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.SetStyle(ControlStyles.UserPaint, true);
+            Frog.Image = Properties.Resources.froggy;
+            Frog.SizeMode = PictureBoxSizeMode.StretchImage;
+            RandomFly();
         }
 
         int pinkSpeed = 5;
@@ -55,6 +61,7 @@ namespace Arcade
                         Frog.Location = new Point(450, 600);
                         lifeLeft--;
                         label1.Text = $"Lives: {lifeLeft}";
+                        RandomFly();
                     }
                 }
             }
@@ -70,6 +77,7 @@ namespace Arcade
                 Frog.Location = new Point(450, 600);
                 timeLeft = 3000;
                 label1.Text = $"Lives: {lifeLeft}";
+                RandomFly();
             }
         }
 
@@ -166,21 +174,28 @@ namespace Arcade
 
         private void Frogger_KeyPress_1(object sender, KeyPressEventArgs e)
         {
+            Frog.Invalidate();
             switch (e.KeyChar)
             {
                 case 'w':
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y - 50);
+                    Frog.Image = Properties.Resources.froggy;
                     break;
                 case 's':
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y + 50);
+                    Frog.Image = Properties.Resources.froggy_Down;
                     break;
                 case 'a':
                     Frog.Location = new Point(Frog.Location.X - 25, Frog.Location.Y);
+                    Frog.Image = Properties.Resources.froggy_Left;
                     break;
                 case 'd':
                     Frog.Location = new Point(Frog.Location.X + 25, Frog.Location.Y);
+                    Frog.Image = Properties.Resources.froggy_Right;
                     break;
             }
+            Frog.SizeMode = PictureBoxSizeMode.StretchImage;
+            
         }
 
         private void moveFrog_Tick(object sender, EventArgs e)
@@ -214,6 +229,41 @@ namespace Arcade
                     }
                 }
             }
+        }
+
+        //Put a fly in a random spot
+        private void RandomFly()
+        {
+            Random r = new Random();
+
+            int choice = r.Next(0, 7);
+
+
+            fly1.Visible = false;
+            fly2.Visible = false;
+            fly3.Visible = false;
+            fly4.Visible = false;
+            fly5.Visible = false;
+
+            switch (choice)
+            {
+                case 1:
+                    fly1.Visible = true;
+                    break;
+                case 2:
+                    fly2.Visible = true;
+                    break;
+                case 3:
+                    fly3.Visible = true;
+                    break;
+                case 4:
+                    fly4.Visible = true;
+                    break;
+                case 5:
+                    fly5.Visible = true;
+                    break;
+            }
+
         }
     }
 }

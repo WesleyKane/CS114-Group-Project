@@ -148,5 +148,47 @@
   <ItemGroup>
     <None Include="Resources\fire.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogger background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongLog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smalllog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truckLong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Right.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

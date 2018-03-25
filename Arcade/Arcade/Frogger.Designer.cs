@@ -42,7 +42,7 @@
             this.log4 = new System.Windows.Forms.PictureBox();
             this.log3 = new System.Windows.Forms.PictureBox();
             this.log2 = new System.Windows.Forms.PictureBox();
-            this.fly = new System.Windows.Forms.PictureBox();
+            this.fly1 = new System.Windows.Forms.PictureBox();
             this.lives = new System.Windows.Forms.PictureBox();
             this.row1_5 = new System.Windows.Forms.PictureBox();
             this.row1_3 = new System.Windows.Forms.PictureBox();
@@ -100,6 +100,11 @@
             this.mixTreeTimer = new System.Windows.Forms.Timer(this.components);
             this.turtles = new System.Windows.Forms.Timer(this.components);
             this.moveFrog = new System.Windows.Forms.Timer(this.components);
+            this.Score = new System.Windows.Forms.Label();
+            this.fly2 = new System.Windows.Forms.PictureBox();
+            this.fly3 = new System.Windows.Forms.PictureBox();
+            this.fly4 = new System.Windows.Forms.PictureBox();
+            this.fly5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TimeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Frog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.log6)).BeginInit();
@@ -107,7 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.log4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.log3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.log2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lives)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.row1_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.row1_3)).BeginInit();
@@ -157,6 +162,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly5)).BeginInit();
             this.SuspendLayout();
             // 
             // greenCar
@@ -207,7 +216,8 @@
             // 
             // Frog
             // 
-            this.Frog.BackColor = System.Drawing.Color.Lime;
+            this.Frog.BackColor = System.Drawing.Color.Transparent;
+            this.Frog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Frog.Location = new System.Drawing.Point(444, 600);
             this.Frog.Name = "Frog";
             this.Frog.Size = new System.Drawing.Size(45, 45);
@@ -269,15 +279,15 @@
             this.log2.TabIndex = 74;
             this.log2.TabStop = false;
             // 
-            // fly
+            // fly1
             // 
-            this.fly.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly.BackgroundImage")));
-            this.fly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fly.Location = new System.Drawing.Point(478, 1);
-            this.fly.Name = "fly";
-            this.fly.Size = new System.Drawing.Size(40, 43);
-            this.fly.TabIndex = 73;
-            this.fly.TabStop = false;
+            this.fly1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly1.BackgroundImage")));
+            this.fly1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fly1.Location = new System.Drawing.Point(57, 4);
+            this.fly1.Name = "fly1";
+            this.fly1.Size = new System.Drawing.Size(40, 43);
+            this.fly1.TabIndex = 73;
+            this.fly1.TabStop = false;
             // 
             // lives
             // 
@@ -427,7 +437,7 @@
             this.turtle4_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_3.BackgroundImage")));
             this.turtle4_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_3.Location = new System.Drawing.Point(957, 100);
+            this.turtle4_3.Location = new System.Drawing.Point(917, 100);
             this.turtle4_3.Name = "turtle4_3";
             this.turtle4_3.Size = new System.Drawing.Size(50, 50);
             this.turtle4_3.TabIndex = 55;
@@ -504,7 +514,7 @@
             this.turtle4_2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_2.BackgroundImage")));
             this.turtle4_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_2.Location = new System.Drawing.Point(907, 100);
+            this.turtle4_2.Location = new System.Drawing.Point(867, 100);
             this.turtle4_2.Name = "turtle4_2";
             this.turtle4_2.Size = new System.Drawing.Size(50, 50);
             this.turtle4_2.TabIndex = 38;
@@ -581,7 +591,7 @@
             this.turtle4_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.turtle4_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("turtle4_1.BackgroundImage")));
             this.turtle4_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.turtle4_1.Location = new System.Drawing.Point(857, 100);
+            this.turtle4_1.Location = new System.Drawing.Point(817, 100);
             this.turtle4_1.Name = "turtle4_1";
             this.turtle4_1.Size = new System.Drawing.Size(50, 50);
             this.turtle4_1.TabIndex = 45;
@@ -829,14 +839,69 @@
             this.moveFrog.Enabled = true;
             this.moveFrog.Tick += new System.EventHandler(this.moveFrog_Tick);
             // 
+            // Score
+            // 
+            this.Score.AutoSize = true;
+            this.Score.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Score.Location = new System.Drawing.Point(127, 633);
+            this.Score.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Score.Name = "Score";
+            this.Score.Size = new System.Drawing.Size(111, 28);
+            this.Score.TabIndex = 80;
+            this.Score.Text = "Score: 0";
+            // 
+            // fly2
+            // 
+            this.fly2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly2.BackgroundImage")));
+            this.fly2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fly2.Location = new System.Drawing.Point(266, 4);
+            this.fly2.Name = "fly2";
+            this.fly2.Size = new System.Drawing.Size(40, 43);
+            this.fly2.TabIndex = 73;
+            this.fly2.TabStop = false;
+            // 
+            // fly3
+            // 
+            this.fly3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly3.BackgroundImage")));
+            this.fly3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fly3.Location = new System.Drawing.Point(478, 4);
+            this.fly3.Name = "fly3";
+            this.fly3.Size = new System.Drawing.Size(40, 43);
+            this.fly3.TabIndex = 73;
+            this.fly3.TabStop = false;
+            // 
+            // fly4
+            // 
+            this.fly4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly4.BackgroundImage")));
+            this.fly4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fly4.Location = new System.Drawing.Point(680, 4);
+            this.fly4.Name = "fly4";
+            this.fly4.Size = new System.Drawing.Size(40, 43);
+            this.fly4.TabIndex = 73;
+            this.fly4.TabStop = false;
+            // 
+            // fly5
+            // 
+            this.fly5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fly5.BackgroundImage")));
+            this.fly5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fly5.Location = new System.Drawing.Point(889, 4);
+            this.fly5.Name = "fly5";
+            this.fly5.Size = new System.Drawing.Size(40, 43);
+            this.fly5.TabIndex = 73;
+            this.fly5.TabStop = false;
+            // 
             // Frogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(986, 674);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(986, 668);
             this.Controls.Add(this.TimeBox);
             this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.Score);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Frog);
             this.Controls.Add(this.log6);
@@ -844,7 +909,11 @@
             this.Controls.Add(this.log4);
             this.Controls.Add(this.log3);
             this.Controls.Add(this.log2);
-            this.Controls.Add(this.fly);
+            this.Controls.Add(this.fly5);
+            this.Controls.Add(this.fly4);
+            this.Controls.Add(this.fly3);
+            this.Controls.Add(this.fly2);
+            this.Controls.Add(this.fly1);
             this.Controls.Add(this.lives);
             this.Controls.Add(this.row1_5);
             this.Controls.Add(this.row1_3);
@@ -904,7 +973,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.log4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.log3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.log2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lives)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.row1_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.row1_3)).EndInit();
@@ -954,6 +1023,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PinkCar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -973,7 +1046,7 @@
         private System.Windows.Forms.PictureBox log4;
         private System.Windows.Forms.PictureBox log3;
         private System.Windows.Forms.PictureBox log2;
-        private System.Windows.Forms.PictureBox fly;
+        private System.Windows.Forms.PictureBox fly1;
         private System.Windows.Forms.PictureBox lives;
         private System.Windows.Forms.PictureBox row1_5;
         private System.Windows.Forms.PictureBox row1_3;
@@ -1031,5 +1104,10 @@
         private System.Windows.Forms.Timer mixTreeTimer;
         private System.Windows.Forms.Timer turtles;
         private System.Windows.Forms.Timer moveFrog;
+        private System.Windows.Forms.Label Score;
+        private System.Windows.Forms.PictureBox fly2;
+        private System.Windows.Forms.PictureBox fly3;
+        private System.Windows.Forms.PictureBox fly4;
+        private System.Windows.Forms.PictureBox fly5;
     }
 }
