@@ -16,14 +16,29 @@ namespace Arcade
         public Frogger()
         {
             InitializeComponent();
+            //Allow background without lag
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.UserPaint, true);
+
+            //Set the frog image to a frog
             Frog.Image = Properties.Resources.froggy;
             Frog.SizeMode = PictureBoxSizeMode.StretchImage;
+            pondFrog1.Image = Properties.Resources.froggy;
+            pondFrog1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pondFrog2.Image = Properties.Resources.froggy;
+            pondFrog2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pondFrog3.Image = Properties.Resources.froggy;
+            pondFrog3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pondFrog4.Image = Properties.Resources.froggy;
+            pondFrog4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pondFrog5.Image = Properties.Resources.froggy;
+            pondFrog5.SizeMode = PictureBoxSizeMode.StretchImage;
+            //Put the fly in a random place
             RandomFly();
         }
 
+        //Set interval of timer for each set
         int pinkSpeed = 5;
         int greenSpeed = 30;
         int greySpeed = 1;
@@ -38,12 +53,15 @@ namespace Arcade
 
         private void everythingMoves_Tick_1(object sender, EventArgs e)
         {
+
+            label2.Text = Convert.ToString(Frog.Location);
             timeLeft -= 5;
             TimeBox.Size = new Size(timeLeft / 10, 25);
 
+            
             foreach (var PB in this.Controls.OfType<PictureBox>())
             {
-
+                //Loop the moving objects on the screen
                 if (PB.Left < -50)
                 {
                     PB.Location = new Point(1000, PB.Location.Y);
@@ -52,35 +70,111 @@ namespace Arcade
                 {
                     PB.Location = new Point(-45, PB.Location.Y);
                 }
+                if (PB.Location.Y < -10)
+                    PB.Location = new Point(PB.Location.X, 0);
+                if (PB.Location.Y > 700)
+                    PB.Location = new Point(PB.Location.X, 600);
 
+
+                //If the frog gets a fly give extra life
+                if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name[0] == 'f')
+                {
+                    restartFrog();
+                    lifeLeft++;
+                    updateLife();
+                    MessageBox.Show("MORE LIFE");
+                }
+
+                
+                //Frog needs to land in pond
+                if (Frog.Location.Y == 0)
+                {
+                    if (Frog.Location.X > 28 && Frog.Location.X < 128)
+                    {
+                        if (pondFrog1.Location.X == 57)
+                        {
+                            lifeLeft--;
+                            softReset();
+                        }
+                        else
+                            pondFrog1.Location = new Point(57, 4);
+                    }
+                    else if (Frog.Location.X > 234 && Frog.Location.X < 338)
+                    {
+                        if (pondFrog2.Location.X == 266)
+                        {             
+                        lifeLeft--;
+                            softReset();
+                        }
+                        else
+                            pondFrog2.Location = new Point(266, 4);
+                    }
+                    else if (Frog.Location.X > 442 && Frog.Location.X < 546)
+                    {
+                        if (pondFrog3.Location.X == 473)
+                        {
+                        lifeLeft--;
+                            softReset();
+                        }
+                        else
+                            pondFrog3.Location = new Point(473, 4);
+                    }
+                    else if (Frog.Location.X > 651 && Frog.Location.X < 752)
+                    {
+                        if (pondFrog4.Location.X == 680)
+                        {
+                        lifeLeft--;
+                            softReset();
+                        }
+                        else
+                            pondFrog4.Location = new Point(680, 4);
+                    }
+                    else if (Frog.Location.X > 857 && Frog.Location.X < 960)
+                        {
+                        if (pondFrog5.Location.X == 888)
+                        {
+                        lifeLeft--;
+                            softReset();
+                        }
+                        else
+                            pondFrog5.Location = new Point(888, 4);
+                    }
+                    else
+                    {
+                        restartFrog();
+                        lifeLeft--;
+                        updateLife();
+                    }
+                }
+
+                //If frog is hit by car it dies
                 if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name != "Frog")
                 {
                     if (Frog.Location.Y >= 300)
                     {
-                        //everythingMoves.Enabled = false;
                         Frog.Location = new Point(450, 600);
                         lifeLeft--;
-                        label1.Text = $"Lives: {lifeLeft}";
+                        updateLife();
                         RandomFly();
                     }
                 }
             }
+
+            //Restart game when the user has no lives
             if (lifeLeft == 0)
             {
                 lifeLeft = 4;
-                Frog.Location = new Point(450, 600);
-                timeLeft = 3000;
+                softReset();
             }
+            //Restart when time runs out
             if (timeLeft == 0)
             {
                 lifeLeft--;
-                Frog.Location = new Point(450, 600);
-                timeLeft = 3000;
-                label1.Text = $"Lives: {lifeLeft}";
-                RandomFly();
+                softReset();
             }
         }
 
+        //Sound sample
         private void playSimpleSound()
         {
             SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
@@ -175,6 +269,8 @@ namespace Arcade
         private void Frogger_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             Frog.Invalidate();
+
+            //Moves the frog
             switch (e.KeyChar)
             {
                 case 'w':
@@ -200,6 +296,7 @@ namespace Arcade
 
         private void moveFrog_Tick(object sender, EventArgs e)
         {
+            bool inwater = true;
             foreach (var PB in this.Controls.OfType<PictureBox>()) {
                 if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name != "Frog")
                 {
@@ -227,7 +324,18 @@ namespace Arcade
                             moveFrog.Interval = smallLogSpeed;
                             break;
                     }
+                    inwater = false;
                 }
+            }
+
+            //Restart if the frog is in the water    
+            if (Frog.Location.Y < 300 && Frog.Location.Y > 20 && inwater == true)
+            {
+                lifeLeft--;
+                restartFrog();
+                timeLeft = 3000;
+                RandomFly();
+                updateLife();
             }
         }
 
@@ -236,34 +344,46 @@ namespace Arcade
         {
             Random r = new Random();
 
-            int choice = r.Next(0, 7);
+            //get random spot
+            int choice = r.Next(0, 10);
 
-
-            fly1.Visible = false;
-            fly2.Visible = false;
-            fly3.Visible = false;
-            fly4.Visible = false;
-            fly5.Visible = false;
-
+            //Put fly in spot or have no fly
             switch (choice)
             {
+                case 0:
+                    fly1.Location = new Point(57, 4);
+                    break;
                 case 1:
-                    fly1.Visible = true;
+                    fly1.Location = new Point(266, 4);
                     break;
                 case 2:
-                    fly2.Visible = true;
+                    fly1.Location = new Point(473, 4);
                     break;
                 case 3:
-                    fly3.Visible = true;
+                    fly1.Location = new Point(680, 4);
                     break;
                 case 4:
-                    fly4.Visible = true;
+                    fly1.Location = new Point(888, 4);
                     break;
-                case 5:
-                    fly5.Visible = true;
+                default:
+                    fly1.Location = new Point(1500, 4);
                     break;
             }
-
+        }
+        private void restartFrog()
+        {
+            Frog.Location = new Point(450, 600);
+        }
+        private void updateLife()
+        {
+            label1.Text = $"Lives: {lifeLeft}";
+        }
+        private void softReset()
+        {
+            restartFrog();
+            timeLeft = 3000;
+            RandomFly();
+            updateLife();
         }
     }
 }
