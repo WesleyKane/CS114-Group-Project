@@ -137,6 +137,7 @@ namespace Arcade
             if (B1.Bounds.IntersectsWith(Player2.Bounds))
             {
                 Player2.Height /= 2;
+                B2.Height /= 2;
                 B1.Location = new Point(Player1.Location.X , Player1.Location.Y + B1Position);
                 B2Position /= 2;
                 shoot1 = false;
@@ -162,6 +163,7 @@ namespace Arcade
                 Player1.Height /= 2;
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
                 B1Position /= 2;
+                B1.Height /= 2;
                 shoot2 = false;
             }
 
@@ -172,7 +174,7 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the ball direction
-                //ballx -= 2; // increases the speed of the ball
+                ballx -= 1; // increases the speed of the ball
                 Score2++;//adds one to player2 score
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
@@ -184,7 +186,7 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen width wise
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the direction of the ball
-                //ballx += 2; //Increases the speed of the ball
+                ballx += 1; //Increases the speed of the ball
                 Score1++;//adds one to player1 score
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
