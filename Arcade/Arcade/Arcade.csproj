@@ -83,13 +83,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Frogger.resx">
       <DependentUpon>Frogger.cs</DependentUpon>
-</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pong.resx">
       <DependentUpon>Pong.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -194,6 +192,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\froggy_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Station.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuTheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship-blowing-up-2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

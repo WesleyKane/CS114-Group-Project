@@ -66,7 +66,6 @@
             this.Player2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Player2.TabIndex = 1;
             this.Player2.TabStop = false;
-            this.Player2.Click += new System.EventHandler(this.Player2_Click);
             // 
             // ball
             // 
