@@ -83,8 +83,13 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Frogger.resx">
       <DependentUpon>Frogger.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Pong.resx">
+      <DependentUpon>Pong.cs</DependentUpon>
+>>>>>>> jundee
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
