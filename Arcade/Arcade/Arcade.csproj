@@ -63,11 +63,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacman.cs">
+    <Compile Include="Frogger.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacman.Designer.cs">
-      <DependentUpon>Pacman.cs</DependentUpon>
+    <Compile Include="Frogger.Designer.cs">
+      <DependentUpon>Frogger.cs</DependentUpon>
     </Compile>
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
@@ -77,8 +77,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asteroids.resx">
+      <DependentUpon>Asteroids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BattleShip.resx">
+      <DependentUpon>BattleShip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frogger.resx">
+      <DependentUpon>Frogger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pong.resx">
+      <DependentUpon>Pong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +114,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space backround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space backround1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astHit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogger background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongLog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smalllog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truckLong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froggy_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Station.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuTheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship-blowing-up-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipFireIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipMissIcon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
