@@ -97,47 +97,62 @@ namespace Arcade
                             softReset();
                         }
                         else
-                            pondFrog1.Location = new Point(57, 4);
+                        {
+                            pondFrog1.Location = new Point(680, 4);
+                            lifeLeft++;
+                        }
                     }
                     else if (Frog.Location.X > 234 && Frog.Location.X < 338)
                     {
                         if (pondFrog2.Location.X == 266)
                         {             
-                        lifeLeft--;
+                            lifeLeft--;
                             softReset();
                         }
                         else
-                            pondFrog2.Location = new Point(266, 4);
+                        {
+                            pondFrog2.Location = new Point(680, 4);
+                            lifeLeft++;
+                        }
                     }
                     else if (Frog.Location.X > 442 && Frog.Location.X < 546)
                     {
                         if (pondFrog3.Location.X == 473)
                         {
-                        lifeLeft--;
+                            lifeLeft--;
                             softReset();
                         }
                         else
-                            pondFrog3.Location = new Point(473, 4);
+                        {
+                            pondFrog3.Location = new Point(680, 4);
+                            lifeLeft++;
+                        }
                     }
                     else if (Frog.Location.X > 651 && Frog.Location.X < 752)
                     {
                         if (pondFrog4.Location.X == 680)
                         {
-                        lifeLeft--;
+                            lifeLeft--;
                             softReset();
                         }
                         else
+                        {
                             pondFrog4.Location = new Point(680, 4);
+                            lifeLeft++;
+                        }
                     }
                     else if (Frog.Location.X > 857 && Frog.Location.X < 960)
                         {
                         if (pondFrog5.Location.X == 888)
                         {
-                        lifeLeft--;
+                            lifeLeft--;
                             softReset();
                         }
                         else
-                            pondFrog5.Location = new Point(888, 4);
+                        {
+                            pondFrog5.Location = new Point(680, 4);
+                            lifeLeft++;
+                        }
                     }
                     else
                     {
