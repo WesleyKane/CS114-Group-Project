@@ -15,9 +15,7 @@ namespace Arcade
         System.Media.SoundPlayer asteroidHit = new System.Media.SoundPlayer(Properties.Resources.astHit);
         System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.fire);
         int facingDirection, bulletDirection, score;
-        PictureBox spaceShipImage = new PictureBox();
-        PictureBox explosion = new PictureBox();
-        
+        PictureBox spaceShipImage = new PictureBox(); // test123
         PictureBox[] asteroidsImage = new PictureBox[5]; // setitng up array for asteroid images.
         PictureBox missleImage = new PictureBox();
         bool fire = false;
@@ -36,10 +34,6 @@ namespace Arcade
         {
             InitializeComponent();
             KeyDown += new KeyEventHandler(ShipMoveEvent);
-
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            this.SetStyle(ControlStyles.UserPaint, true);
         }
 
         private void Asteroids_Load(object sender, EventArgs e) // main form.
@@ -69,7 +63,7 @@ namespace Arcade
             {
                 asteroidsImage[i] = new PictureBox(); // creating new picture box.
                 asteroidsImage[i].Image = Properties.Resources.asteroid2;
-                asteroidsImage[i].Size = new Size(90, 90); //setting size
+                asteroidsImage[i].Size = new Size(100, 100); //setting size
                 asteroidsImage[i].SizeMode = PictureBoxSizeMode.StretchImage; // stretching image.
 
                 //position of image relative to form coordinates.
@@ -356,15 +350,6 @@ namespace Arcade
                     
                     if (missleImage.Bounds.IntersectsWith(asteroidsImage[i].Bounds) && asteroidsImage[i].Visible == true)
                     {
-                        explosion.Visible = true;
-                        explosion.Image = Properties.Resources.explosion;
-                        explosion.SizeMode = PictureBoxSizeMode.StretchImage;
-                        explosion.Left = asteroidsImage[i].Left;
-                        explosion.Top = asteroidsImage[i].Top;
-                        Controls.Add(explosion);
-                        explosionGif();
-
-
                         asteroidsImage[i].Visible = false;
                         fire = false;
                         missleTimer.Enabled = false;
@@ -377,12 +362,6 @@ namespace Arcade
 
                 }
             }
-        }
-        private async void explosionGif()
-        {
-            await Task.Delay(1500);
-            explosion.Visible = false;
-            Controls.Remove(explosion);            
         }
 
 

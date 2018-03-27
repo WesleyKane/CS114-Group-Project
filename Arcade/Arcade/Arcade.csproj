@@ -155,7 +155,6 @@
     <None Include="Resources\fire.wav" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\frogger background.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -217,15 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BattleShipMissIcon.jpg" />
-=======
-    <None Include="Resources\ship5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\explosion.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ast3trans.png" />
->>>>>>> wesley
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
