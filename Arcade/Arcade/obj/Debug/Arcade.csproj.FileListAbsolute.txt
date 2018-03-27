@@ -88,3 +88,5 @@ T:\Profiles\Users\jacob.frost\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj
 T:\Profiles\Users\jacob.frost\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.exe.config
 T:\Profiles\Users\jacob.frost\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.exe
 T:\Profiles\Users\jacob.frost\Source\Repos\CS114-Group-Project\Arcade\Arcade\bin\Debug\Arcade.pdb
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Pong.resources
+C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.BattleShip.resources
