@@ -19,7 +19,7 @@ namespace Arcade.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,6 +63,16 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ast3trans {
+            get {
+                object obj = ResourceManager.GetObject("ast3trans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap asteroid {
             get {
                 object obj = ResourceManager.GetObject("asteroid", resourceCulture);
@@ -92,6 +102,7 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap BattleShipBackground {
             get {
                 object obj = ResourceManager.GetObject("BattleShipBackground", resourceCulture);
@@ -115,6 +126,11 @@ namespace Arcade.Properties {
         internal static System.Drawing.Bitmap BattleShipMissIcon {
             get {
                 object obj = ResourceManager.GetObject("BattleShipMissIcon", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap explosion {
+            get {
+                object obj = ResourceManager.GetObject("explosion", resourceCulture);
+>>>>>>> wesley
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -311,9 +327,15 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap smalllog {
             get {
                 object obj = ResourceManager.GetObject("smalllog", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap ship5 {
+            get {
+                object obj = ResourceManager.GetObject("ship5", resourceCulture);
+>>>>>>> wesley
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
