@@ -64,3 +64,4 @@ C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.ex
 C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.pdb
 >>>>>>> jacob
 C:\Users\COMP\Source\Repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Asteroids.resources
+C:\Users\COMP\source\repos\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.BattleShip.resources

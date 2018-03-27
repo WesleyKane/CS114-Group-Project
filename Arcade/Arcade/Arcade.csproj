@@ -80,6 +80,9 @@
     <EmbeddedResource Include="Asteroids.resx">
       <DependentUpon>Asteroids.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BattleShip.resx">
+      <DependentUpon>BattleShip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +192,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\froggy_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipFireIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleShipMissIcon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
