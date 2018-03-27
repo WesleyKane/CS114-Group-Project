@@ -69,7 +69,7 @@ namespace Arcade
             {
                 asteroidsImage[i] = new PictureBox(); // creating new picture box.
                 asteroidsImage[i].Image = Properties.Resources.asteroid2;
-                asteroidsImage[i].Size = new Size(100, 100); //setting size
+                asteroidsImage[i].Size = new Size(90, 90); //setting size
                 asteroidsImage[i].SizeMode = PictureBoxSizeMode.StretchImage; // stretching image.
 
                 //position of image relative to form coordinates.
