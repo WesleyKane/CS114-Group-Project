@@ -29,6 +29,10 @@ namespace Arcade
         int B2x = 15;
         int B2Position = 40;
         int B1Position = 40;
+        int hit1 = 1;
+        int hit2 = 1;
+        int size1 = 2;
+        int size2 = 2;
 
         System.Media.SoundPlayer victory = new System.Media.SoundPlayer(Properties.Resources.GuilesThemeI);//Sound for the winner
         System.Media.SoundPlayer bounce = new System.Media.SoundPlayer(Properties.Resources.Bounce);//Sound effects for the ball hitting an object
@@ -150,17 +154,27 @@ namespace Arcade
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
                 shoot1 = false;
             }
+            if (hit1 == 5)//prevents player 1 from shrinnking after v=being shot five times by player2
+            {
+                size2 = 1;
+            }
             if (B1.Bounds.IntersectsWith(Player2.Bounds))
             {
-                Player2.Height /= 2;
-                B2.Height /= 2;
+                Player2.Height /= size2;
+                B2.Height /= size2;
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
                 B2Position /= 2;
                 LoseLife.Play();
+                hit1 += 1;
+                
                 shoot1 = false;
             }
 
             //Allows player2 to shoot at player1
+            if (hit2 == 5)//prevents player1 from shrinking after being shot 5 times by player2
+            {
+                size1 = 1;
+            }
             if (shoot2 == false)
             {
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
@@ -179,11 +193,12 @@ namespace Arcade
             }
             if (B2.Bounds.IntersectsWith(Player1.Bounds))
             {
-                Player1.Height /= 2;
+                Player1.Height /= size1;
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
                 B1Position /= 2;
-                B1.Height /= 2;
+                B1.Height /= size1;
                 LoseLife.Play();
+                hit2 += 1;
                 shoot2 = false;
             }
 
@@ -224,6 +239,7 @@ namespace Arcade
                 ballx = -ballx;//The ball bounces in the other direction
                 bounce.Play();
             }
+
             if (B1.Bounds.IntersectsWith(B2.Bounds))
             {
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
