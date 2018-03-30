@@ -174,7 +174,7 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the ball direction
-                ballx -= 1; // increases the speed of the ball
+                //ballx -= 1; // increases the speed of the ball
                 Score2++;//adds one to player2 score
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
@@ -186,7 +186,7 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen width wise
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the direction of the ball
-                ballx += 1; //Increases the speed of the ball
+                //ballx += 1; //Increases the speed of the ball
                 Score1++;//adds one to player1 score
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
