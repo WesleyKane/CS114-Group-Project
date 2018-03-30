@@ -256,7 +256,7 @@ namespace Arcade
                 GameTimer.Start();
             }
 
-            if (Score1 == 1)//IF player 1 scores 10 points then player1 wins
+            if (Score1 == 10)//IF player 1 scores 10 points then player1 wins
             {
 
                 GameTimer.Stop();
@@ -264,7 +264,7 @@ namespace Arcade
                 MessageBox.Show("Player 1 wins!");
                 victory.Stop();
             }
-            if (Score2 == 1)//If player 2 wins then player 2 wins
+            if (Score2 == 10)//If player 2 wins then player 2 wins
             {
                 GameTimer.Stop();
                 victory.Play();
