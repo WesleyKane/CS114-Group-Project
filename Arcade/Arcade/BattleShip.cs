@@ -96,8 +96,10 @@ namespace Arcade
                         enemyPosition[index].Enabled = false;
 
                         enemyPosition[index].BackgroundImage = Properties.Resources.BattleShipFireIcon;
+						enemyPosition[index].BackgroundImageLayout = ImageLayout.Stretch;
 
-                        enemyPosition[index].BackColor = System.Drawing.Color.DarkBlue;
+
+						enemyPosition[index].BackColor = System.Drawing.Color.DarkBlue;
 
                         playerTotalScore++;
 
@@ -110,8 +112,9 @@ namespace Arcade
                         enemyPosition[index].Enabled = false;
 
                         enemyPosition[index].BackgroundImage = Properties.Resources.BattleShipMissIcon;
+						enemyPosition[index].BackgroundImageLayout = ImageLayout.Stretch;
 
-                        enemyPlayTimer.Start();
+						enemyPlayTimer.Start();
                     }
                 }
             }
@@ -144,8 +147,9 @@ namespace Arcade
                     //if the index has a tag of playership then the following will be done
 
                     playerPosition[index].BackgroundImage = Properties.Resources.BattleShipFireIcon;
+					enemyPosition[index].BackgroundImageLayout = ImageLayout.Stretch;
 
-                    enemyMoves.Text = "" + playerPosition[index].Text; //show which button was attacked
+					enemyMoves.Text = "" + playerPosition[index].Text; //show which button was attacked
 
                     playerPosition[index].Enabled = false; //disable the button
 
@@ -165,8 +169,9 @@ namespace Arcade
                     // if the player tag isnt of playership then the following is done
 
                     playerPosition[index].BackgroundImage = Properties.Resources.BattleShipMissIcon;
+					enemyPosition[index].BackgroundImageLayout = ImageLayout.Stretch;
 
-                    enemyMoves.Text = "" + playerPosition[index].Text; //update the enenmy attack location on label 2
+					enemyMoves.Text = "" + playerPosition[index].Text; //update the enenmy attack location on label 2
 
                     playerPosition[index].Enabled = false; //disable the button cpu attacked
 
