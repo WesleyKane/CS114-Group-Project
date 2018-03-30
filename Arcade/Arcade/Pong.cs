@@ -163,7 +163,7 @@ namespace Arcade
                 Player2.Height /= size2;
                 B2.Height /= size2;
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
-                B2Position /= 2;
+                B2Position /= size2;
                 LoseLife.Play();
                 hit1 += 1;
                 
@@ -195,7 +195,7 @@ namespace Arcade
             {
                 Player1.Height /= size1;
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
-                B1Position /= 2;
+                B1Position /= size1;
                 B1.Height /= size1;
                 LoseLife.Play();
                 hit2 += 1;
