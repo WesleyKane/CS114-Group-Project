@@ -118,5 +118,8 @@
   <ItemGroup>
     <None Include="Resources\LoseLife.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power_Up2.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

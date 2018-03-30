@@ -38,6 +38,7 @@ namespace Arcade
         System.Media.SoundPlayer bounce = new System.Media.SoundPlayer(Properties.Resources.Bounce);//Sound effects for the ball hitting an object
         System.Media.SoundPlayer Laser = new System.Media.SoundPlayer(Properties.Resources.Laser_Shoot1);//Sound effect for shooting
         System.Media.SoundPlayer LoseLife = new System.Media.SoundPlayer(Properties.Resources.LoseLife);//sound effect for when a players paddle get shot
+        System.Media.SoundPlayer Score = new System.Media.SoundPlayer(Properties.Resources.Power_Up2);//sound effects for when a player scores
 
         public Pong()
         {
@@ -206,6 +207,7 @@ namespace Arcade
             {
                 int CenterH = ClientSize.Height / 2;
                 int CenterW = ClientSize.Width / 2;
+                Score.Play();
                 Score2++;//adds one to player2 score
                 ball.Left = CenterW;//Resets the ball to the middle of the screen
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
@@ -219,6 +221,7 @@ namespace Arcade
             {
                 int CenterH = ClientSize.Height / 2;
                 int CenterW = ClientSize.Width / 2;
+                Score.Play();
                 Score1++;//adds one to player1 score
                 ball.Left = CenterW;//Resets the ball to the middle of the screen width wise
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise

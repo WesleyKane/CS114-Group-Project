@@ -95,5 +95,14 @@ namespace Arcade.Properties {
                 return ResourceManager.GetStream("LoseLife", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Power_Up2 {
+            get {
+                return ResourceManager.GetStream("Power_Up2", resourceCulture);
+            }
+        }
     }
 }
