@@ -93,7 +93,7 @@ namespace Arcade
                         else
                         {
                             pondFrog1.Location = new Point(56, 4);
-                            lifeLeft++;
+                           // lifeLeft++;
                         }
                     }
                     else if (Frog.Location.X > 238 && Frog.Location.X < 292)
@@ -109,7 +109,7 @@ namespace Arcade
                         else
                         {
                             pondFrog2.Location = new Point(263, 4);
-                            lifeLeft++;
+                           // lifeLeft++;
                         }
                     }
                     else if (Frog.Location.X > 443 && Frog.Location.X < 598)
@@ -125,7 +125,7 @@ namespace Arcade
                         else
                         {
                             pondFrog3.Location = new Point(472, 4);
-                            lifeLeft++;
+                           // lifeLeft++;
                         }
                     }
                     else if (Frog.Location.X > 653 && Frog.Location.X < 704)
@@ -141,7 +141,7 @@ namespace Arcade
                         else
                         {
                             pondFrog4.Location = new Point(680, 4);
-                            lifeLeft++;
+                           // lifeLeft++;
                         }
                     }
                     else if (Frog.Location.X > 860 && Frog.Location.X < 912)
@@ -157,7 +157,7 @@ namespace Arcade
                         else
                         {
                             pondFrog5.Location = new Point(887, 4);
-                            lifeLeft++;
+                          //  lifeLeft++;
                         }
                     }
                     else
@@ -169,7 +169,7 @@ namespace Arcade
                 }
 
                 //If frog is hit by car it dies
-                if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name != "Frog" && PB.Name[1] != 'i')
+                if (Frog.Bounds.IntersectsWith(PB.Bounds) && PB.Name != "Frog" && PB.Name[2] != 'm')
                 {
                     if (Frog.Location.Y >= 300)
                     {

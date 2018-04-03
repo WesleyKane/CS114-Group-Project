@@ -105,8 +105,8 @@
             this.pondFrog3 = new System.Windows.Forms.PictureBox();
             this.pondFrog4 = new System.Windows.Forms.PictureBox();
             this.pondFrog5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.timebox3 = new System.Windows.Forms.PictureBox();
+            this.timebox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TimeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Frog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.log6)).BeginInit();
@@ -168,8 +168,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebox2)).BeginInit();
             this.SuspendLayout();
             // 
             // greenCar
@@ -900,25 +900,25 @@
             this.pondFrog5.TabIndex = 85;
             this.pondFrog5.TabStop = false;
             // 
-            // pictureBox1
+            // timebox3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(696, 628);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 34);
-            this.pictureBox1.TabIndex = 87;
-            this.pictureBox1.TabStop = false;
+            this.timebox3.BackColor = System.Drawing.Color.White;
+            this.timebox3.Location = new System.Drawing.Point(696, 628);
+            this.timebox3.Name = "timebox3";
+            this.timebox3.Size = new System.Drawing.Size(293, 34);
+            this.timebox3.TabIndex = 87;
+            this.timebox3.TabStop = false;
             // 
-            // pictureBox2
+            // timebox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(700, 633);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(284, 25);
-            this.pictureBox2.TabIndex = 88;
-            this.pictureBox2.TabStop = false;
+            this.timebox2.BackColor = System.Drawing.Color.Black;
+            this.timebox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.timebox2.Location = new System.Drawing.Point(700, 633);
+            this.timebox2.Margin = new System.Windows.Forms.Padding(2);
+            this.timebox2.Name = "timebox2";
+            this.timebox2.Size = new System.Drawing.Size(284, 25);
+            this.timebox2.TabIndex = 88;
+            this.timebox2.TabStop = false;
             // 
             // Frogger
             // 
@@ -930,8 +930,8 @@
             this.ClientSize = new System.Drawing.Size(986, 668);
             this.Controls.Add(this.Frog);
             this.Controls.Add(this.TimeBox);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.timebox2);
+            this.Controls.Add(this.timebox3);
             this.Controls.Add(this.pondFrog5);
             this.Controls.Add(this.pondFrog4);
             this.Controls.Add(this.pondFrog3);
@@ -1058,8 +1058,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pondFrog5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1142,7 +1142,7 @@
         private System.Windows.Forms.PictureBox pondFrog3;
         private System.Windows.Forms.PictureBox pondFrog4;
         private System.Windows.Forms.PictureBox pondFrog5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox timebox3;
+        private System.Windows.Forms.PictureBox timebox2;
     }
 }
