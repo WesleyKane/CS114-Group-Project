@@ -91,7 +91,7 @@
             this.Player1Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player1Score.Location = new System.Drawing.Point(421, 74);
+            this.Player1Score.Location = new System.Drawing.Point(408, 74);
             this.Player1Score.Name = "Player1Score";
             this.Player1Score.Size = new System.Drawing.Size(23, 25);
             this.Player1Score.TabIndex = 3;
@@ -105,7 +105,7 @@
             this.Player2Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player2Score.Location = new System.Drawing.Point(483, 74);
+            this.Player2Score.Location = new System.Drawing.Point(470, 74);
             this.Player2Score.Name = "Player2Score";
             this.Player2Score.Size = new System.Drawing.Size(23, 25);
             this.Player2Score.TabIndex = 4;

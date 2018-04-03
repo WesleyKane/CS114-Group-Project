@@ -19,20 +19,20 @@ namespace Arcade
         bool GoUp2;//Bool top determine whether player2 wants to go up or not
         bool GoDown1;//Bool to determine whether the player wants to go down or not
         bool GoDown2;//Bool to determine whether the player2 wants to go up or not
-        int ballx = 5;//Horizontal X axis speed value for the ball object
-        int bally = 5;//Vertical Y axis speed value for the ball object
+        int ballx = 8;//Horizontal X axis speed value for the ball object
+        int bally = 8;//Vertical Y axis speed value for the ball object
         int Score1 = 0;//Score for player 1
         int Score2 = 0;//Score for player 2
         bool shoot1;//Allows player 1 to shoot a block
         int B1x = 15;//allow player one to shoot a block
-        bool shoot2;
-        int B2x = 15;
-        int B2Position = 40;
-        int B1Position = 40;
-        int hit1 = 1;
-        int hit2 = 1;
-        int size1 = 2;
-        int size2 = 2;
+        bool shoot2;//bool to determine whether player2 shoots or not
+        int B2x = 15;//allows player2 to shoot a block
+        int B2Position = 40;//position of player2 block
+        int B1Position = 40;//position of player1 block
+        int hit1 = 1;//Variable to determine how many time player1 gets hit
+        int hit2 = 1;//Variable to determine how many time player2 gets hit
+        int size1 = 2;//Variable to alter the size of player1 paddle
+        int size2 = 2;//Variable to determine the size pf player2 paddle
 
         System.Media.SoundPlayer victory = new System.Media.SoundPlayer(Properties.Resources.GuilesThemeI);//Sound for the winner
         System.Media.SoundPlayer bounce = new System.Media.SoundPlayer(Properties.Resources.Bounce);//Sound effects for the ball hitting an object
@@ -125,14 +125,10 @@ namespace Arcade
                 GameTimer.Start();
             }
         }
-
-
-
+        
         private void GameTimer_Tick(object sender, EventArgs e)
         {
-
-
-
+            
             Player1Score.Text = "" + Score1;//shows the score for player 1
             Player2Score.Text = "" + Score2;//shows the score for player 2
 
@@ -155,11 +151,11 @@ namespace Arcade
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
                 shoot1 = false;
             }
-            if (hit1 == 5)//prevents player 1 from shrinnking after v=being shot five times by player2
+            if (hit1 == 3)//prevents player 1 from shrinnking after v=being shot five times by player2
             {
                 size2 = 1;
             }
-            if (B1.Bounds.IntersectsWith(Player2.Bounds))
+            if (B1.Bounds.IntersectsWith(Player2.Bounds))//if player1 hits player2 then player2's paddle size decreases
             {
                 Player2.Height /= size2;
                 B2.Height /= size2;
@@ -172,7 +168,7 @@ namespace Arcade
             }
 
             //Allows player2 to shoot at player1
-            if (hit2 == 5)//prevents player1 from shrinking after being shot 5 times by player2
+            if (hit2 == 3)//prevents player1 from shrinking after being shot 5 times by player2
             {
                 size1 = 1;
             }
@@ -192,7 +188,7 @@ namespace Arcade
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
                 shoot2 = false;
             }
-            if (B2.Bounds.IntersectsWith(Player1.Bounds))
+            if (B2.Bounds.IntersectsWith(Player1.Bounds))//player1's paddle decreases if player 2 hits player1
             {
                 Player1.Height /= size1;
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
@@ -212,12 +208,14 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the ball direction
-                               //ballx -= 1; // increases the speed of the ball
-
+                B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
+                B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
+                shoot1 = false;
+                shoot2 = false;
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
 
-            if (ball.Left + ball.Width > ClientSize.Width)//Checks the score if the ball gets past the right through player 1
+            else if (ball.Left + ball.Width > ClientSize.Width)//Checks the score if the ball gets past the right through player 1
             {
                 int CenterH = ClientSize.Height / 2;
                 int CenterW = ClientSize.Width / 2;
@@ -226,11 +224,13 @@ namespace Arcade
                 ball.Left = CenterW;//Resets the ball to the middle of the screen width wise
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the direction of the ball
-                               //ballx += 1; //Increases the speed of the ball
-
+                B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
+                B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
+                shoot1 = false;
+                shoot2 = false;
                 GameTimer.Stop();//Pauses the game whenever a player scores
             }
-
+            
             if (ball.Top < 0 | ball.Top + ball.Height > ClientSize.Height)//Sets the boundary for the top and bottom of the screen
             {
                 bally = -bally;//Reverses the speed of the ball so that the ball stays within the screen
@@ -243,13 +243,24 @@ namespace Arcade
                 bounce.Play();
             }
 
-            if (B1.Bounds.IntersectsWith(B2.Bounds))
+            if (B1.Bounds.IntersectsWith(B2.Bounds))//if the both the players blocks hit eash other then they will canel each other out
             {
                 B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
                 shoot1 = false;
                 shoot2 = false;
                 LoseLife.Play();
+            }
+
+            if (B1.Bounds.IntersectsWith(ball.Bounds))//if B1 hits the ball then B1 will be sent back to player
+            {
+                B1.Location = new Point(Player1.Location.X, Player1.Location.Y + B1Position);
+                shoot1 = false;
+            }
+            if (B2.Bounds.IntersectsWith(ball.Bounds))// if B2 hits the ball then it will be sent back to initial location
+            {
+                B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
+                shoot2 = false;
             }
 
             if (GoUp1 == true & Player1.Top > 0)//allows player1 to move up
