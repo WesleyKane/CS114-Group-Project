@@ -37,11 +37,15 @@
             this.Player2Score = new System.Windows.Forms.Label();
             this.B1 = new System.Windows.Forms.PictureBox();
             this.B2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Player1
@@ -71,7 +75,7 @@
             // 
             this.ball.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ball.BackColor = System.Drawing.Color.White;
-            this.ball.Location = new System.Drawing.Point(434, 239);
+            this.ball.Location = new System.Drawing.Point(466, 239);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(27, 26);
             this.ball.TabIndex = 2;
@@ -90,7 +94,7 @@
             this.Player1Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player1Score.Location = new System.Drawing.Point(421, 74);
+            this.Player1Score.Location = new System.Drawing.Point(438, 74);
             this.Player1Score.Name = "Player1Score";
             this.Player1Score.Size = new System.Drawing.Size(23, 25);
             this.Player1Score.TabIndex = 3;
@@ -104,7 +108,7 @@
             this.Player2Score.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2Score.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player2Score.Location = new System.Drawing.Point(483, 74);
+            this.Player2Score.Location = new System.Drawing.Point(500, 74);
             this.Player2Score.Name = "Player2Score";
             this.Player2Score.Size = new System.Drawing.Size(23, 25);
             this.Player2Score.TabIndex = 4;
@@ -131,15 +135,35 @@
             this.B2.TabIndex = 6;
             this.B2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox2.Location = new System.Drawing.Point(475, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(10, 566);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // Pong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(935, 566);
+            this.Controls.Add(this.ball);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.B2);
             this.Controls.Add(this.B1);
-            this.Controls.Add(this.ball);
             this.Controls.Add(this.Player2Score);
             this.Controls.Add(this.Player1Score);
             this.Controls.Add(this.Player2);
@@ -154,6 +178,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +195,7 @@
         private System.Windows.Forms.Label Player2Score;
         private System.Windows.Forms.PictureBox B1;
         private System.Windows.Forms.PictureBox B2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
