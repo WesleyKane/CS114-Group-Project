@@ -112,6 +112,26 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battleshipmainmenu {
+            get {
+                object obj = ResourceManager.GetObject("battleshipmainmenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleshipmainmenu1 {
+            get {
+                object obj = ResourceManager.GetObject("battleshipmainmenu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BattleShipMissIcon {
             get {
                 object obj = ResourceManager.GetObject("BattleShipMissIcon", resourceCulture);
@@ -125,6 +145,16 @@ namespace Arcade.Properties {
         internal static System.IO.UnmanagedMemoryStream Bounce {
             get {
                 return ResourceManager.GetStream("Bounce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap explosion {
+            get {
+                object obj = ResourceManager.GetObject("explosion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -290,6 +320,26 @@ namespace Arcade.Properties {
         internal static System.Drawing.Bitmap pink_car {
             get {
                 object obj = ResourceManager.GetObject("pink_car", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pongmainmenu {
+            get {
+                object obj = ResourceManager.GetObject("pongmainmenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pongmainmenu1 {
+            get {
+                object obj = ResourceManager.GetObject("pongmainmenu1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

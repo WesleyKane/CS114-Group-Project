@@ -15,6 +15,7 @@ namespace Arcade
         System.Media.SoundPlayer asteroidHit = new System.Media.SoundPlayer(Properties.Resources.astHit);
         System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.fire);
         int facingDirection, bulletDirection, score;
+        PictureBox explosion = new PictureBox();
         PictureBox spaceShipImage = new PictureBox(); // test123
         PictureBox[] asteroidsImage = new PictureBox[5]; // setitng up array for asteroid images.
         PictureBox missleImage = new PictureBox();
@@ -162,7 +163,7 @@ namespace Arcade
                     spaceShipImage.Visible = false;
                     playAsteroidHit();
                     MessageBox.Show("Game over! Score: " + score + "");
-                    Application.Exit();
+                    this.Close();
                 }
             }
         }
@@ -350,6 +351,15 @@ namespace Arcade
                     
                     if (missleImage.Bounds.IntersectsWith(asteroidsImage[i].Bounds) && asteroidsImage[i].Visible == true)
                     {
+                        explosion.Visible = true;
+                        explosion.Image = Properties.Resources.explosion;
+                        explosion.SizeMode = PictureBoxSizeMode.StretchImage;
+                        explosion.Left = asteroidsImage[i].Left;
+                        explosion.Top = asteroidsImage[i].Top;
+                        Controls.Add(explosion);
+                        explosionGif();
+
+
                         asteroidsImage[i].Visible = false;
                         fire = false;
                         missleTimer.Enabled = false;
@@ -362,6 +372,12 @@ namespace Arcade
 
                 }
             }
+        }
+        private async void explosionGif()
+        {
+            await Task.Delay(1500);
+            explosion.Visible = false;
+            Controls.Remove(explosion);
         }
 
 

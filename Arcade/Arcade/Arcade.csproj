@@ -232,5 +232,20 @@
   <ItemGroup>
     <None Include="Resources\Power_Up2.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battleshipmainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongmainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongmainmenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battleshipmainmenu1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
