@@ -217,5 +217,20 @@
   <ItemGroup>
     <None Include="Resources\BattleShipMissIcon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bounce.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuilesThemeI.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laser_Shoot1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoseLife.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power_Up2.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

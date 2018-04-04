@@ -122,6 +122,15 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Bounce {
+            get {
+                return ResourceManager.GetStream("Bounce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream fire {
             get {
                 return ResourceManager.GetStream("fire", resourceCulture);
@@ -219,6 +228,15 @@ namespace Arcade.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GuilesThemeI {
+            get {
+                return ResourceManager.GetStream("GuilesThemeI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap image {
@@ -229,12 +247,30 @@ namespace Arcade.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Laser_Shoot1 {
+            get {
+                return ResourceManager.GetStream("Laser_Shoot1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap LongLog {
             get {
                 object obj = ResourceManager.GetObject("LongLog", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream LoseLife {
+            get {
+                return ResourceManager.GetStream("LoseLife", resourceCulture);
             }
         }
         
@@ -255,6 +291,15 @@ namespace Arcade.Properties {
             get {
                 object obj = ResourceManager.GetObject("pink_car", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Power_Up2 {
+            get {
+                return ResourceManager.GetStream("Power_Up2", resourceCulture);
             }
         }
         
