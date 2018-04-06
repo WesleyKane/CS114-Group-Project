@@ -185,7 +185,9 @@ namespace Arcade
             if (lifeLeft == 0)
             {
                 lifeLeft = 4;
-                softReset();
+				playerScore = 0;
+				Score.Text = Convert.ToString(playerScore);
+				softReset();
             }
             //Restart when time runs out
             if (timeLeft == 0)
