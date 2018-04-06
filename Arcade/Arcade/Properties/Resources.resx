@@ -130,8 +130,11 @@
   <data name="LoseLife" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoseLife.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pink_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pink car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LongLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LongLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asteroidsstartbutton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asteroidsstartbutton2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="smalllog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\smalllog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +160,9 @@
   <data name="ship_blowing_up_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ship-blowing-up-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="testmmenugif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\testmmenugif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="asteroid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\asteroid2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,17 +181,23 @@
   <data name="fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fire.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="asteroidsstartbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asteroidsstartbutton.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BattleShipMissIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BattleShipMissIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LongLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LongLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Laser_Shoot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Laser_Shoot1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="frogger_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\frogger background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="green_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\green car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pink_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pink car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="turtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\turtle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,17 +214,17 @@
   <data name="battleshipmainmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\battleshipmainmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Laser_Shoot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Laser_Shoot1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="asteroidsstartbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asteroidsstartbutton1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="froggy_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\froggy_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="froggy_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\froggy_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grey_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grey car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="truckLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\truckLong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +238,8 @@
   <data name="Power_Up2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Power_Up2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="froggy_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\froggy_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="truckLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\truckLong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BattleShipFireIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BattleShipFireIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +250,7 @@
   <data name="asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\asteroid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="testmmenugif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\testmmenugif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="asteroidsstartbutton3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asteroidsstartbutton3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

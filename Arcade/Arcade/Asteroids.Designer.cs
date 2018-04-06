@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.asteroidTimer = new System.Windows.Forms.Timer(this.components);
             this.missleTimer = new System.Windows.Forms.Timer(this.components);
+            this.ScoreTracker = new System.Windows.Forms.Label();
+            this.startButton = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
@@ -68,7 +70,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ScoreTracker = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.startButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
@@ -117,6 +119,32 @@
             // 
             this.missleTimer.Interval = 10;
             this.missleTimer.Tick += new System.EventHandler(this.missleTimer_Tick);
+            // 
+            // ScoreTracker
+            // 
+            this.ScoreTracker.AutoSize = true;
+            this.ScoreTracker.Font = new System.Drawing.Font("Copperplate Gothic Light", 17.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreTracker.ForeColor = System.Drawing.SystemColors.Control;
+            this.ScoreTracker.Location = new System.Drawing.Point(1307, 14);
+            this.ScoreTracker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ScoreTracker.Name = "ScoreTracker";
+            this.ScoreTracker.Size = new System.Drawing.Size(97, 25);
+            this.ScoreTracker.TabIndex = 40;
+            this.ScoreTracker.Text = "Score:";
+            this.ScoreTracker.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ScoreTracker.UseMnemonic = false;
+            // 
+            // startButton
+            // 
+            this.startButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.startButton.Image = global::Arcade.Properties.Resources.asteroidsstartbutton3;
+            this.startButton.Location = new System.Drawing.Point(529, 200);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(312, 112);
+            this.startButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.startButton.TabIndex = 41;
+            this.startButton.TabStop = false;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // pictureBox31
             // 
@@ -488,26 +516,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ScoreTracker
-            // 
-            this.ScoreTracker.AutoSize = true;
-            this.ScoreTracker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreTracker.ForeColor = System.Drawing.SystemColors.Control;
-            this.ScoreTracker.Location = new System.Drawing.Point(1307, 14);
-            this.ScoreTracker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ScoreTracker.Name = "ScoreTracker";
-            this.ScoreTracker.Size = new System.Drawing.Size(75, 26);
-            this.ScoreTracker.TabIndex = 40;
-            this.ScoreTracker.Text = "Score:";
-            this.ScoreTracker.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ScoreTracker.UseMnemonic = false;
-            // 
             // Asteroids
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1283, 682);
+            this.ClientSize = new System.Drawing.Size(1458, 761);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.ScoreTracker);
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox32);
@@ -550,6 +565,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asteroids";
             this.Load += new System.EventHandler(this.Asteroids_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.startButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
@@ -634,5 +650,6 @@
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.Timer missleTimer;
         private System.Windows.Forms.Label ScoreTracker;
+        private System.Windows.Forms.PictureBox startButton;
     }
 }

@@ -12,6 +12,7 @@ namespace Arcade
 {
     public partial class Asteroids : Form
     {
+        bool button1 = false;
         System.Media.SoundPlayer asteroidHit = new System.Media.SoundPlayer(Properties.Resources.astHit);
         System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.fire);
         int facingDirection, bulletDirection, score;
@@ -36,14 +37,17 @@ namespace Arcade
             InitializeComponent();
             KeyDown += new KeyEventHandler(ShipMoveEvent);
         }
-
-        private void Asteroids_Load(object sender, EventArgs e) // main form.
+        private void startButton_Click(object sender, EventArgs e)
         {
             AsteroidSetup();
             AsteroidMovement();
             ShipSetup();
+            startButton.Hide();
         }
-
+        private void Asteroids_Load(object sender, EventArgs e) // main form.
+        {
+            
+        }
         void ShipSetup() // space ship spawn.
         {
             spaceShipImage.Image = Properties.Resources.ship4;
@@ -74,8 +78,6 @@ namespace Arcade
                 Controls.Add(asteroidsImage[i]); // adding image to form.
             }
         }
-
-
 
 
         void AsteroidMovement() // starts the asteroid movement.
@@ -163,7 +165,11 @@ namespace Arcade
                     spaceShipImage.Visible = false;
                     playAsteroidHit();
                     MessageBox.Show("Game over! Score: " + score + "");
+                    
                     this.Close();
+                    Asteroids asteroids = new Asteroids();
+                    asteroids.Show();
+
                 }
             }
         }
@@ -188,7 +194,6 @@ namespace Arcade
 
         void ShipMoveEvent(object sender, KeyEventArgs e) // when keys are pressed to rotate ship.
         {
-            //this.Focus();
             switch (e.KeyCode) // gets key argument.
             {
 
@@ -340,6 +345,8 @@ namespace Arcade
                 }
             }
         }
+
+        
 
         void MissleHitDetection() // if the missle comes into intersection contact with an asteroid image...
         {

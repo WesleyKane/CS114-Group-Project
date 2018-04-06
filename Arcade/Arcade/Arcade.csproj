@@ -250,5 +250,17 @@
   <ItemGroup>
     <None Include="Resources\testmmenugif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsstartbutton.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsstartbutton1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsstartbutton2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsstartbutton3.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
