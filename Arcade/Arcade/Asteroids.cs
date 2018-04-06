@@ -52,8 +52,8 @@ namespace Arcade
             facingDirection = 0;
 
             //position of image 
-            spaceShipImage.Left = 800;
             spaceShipImage.Top = 500;
+            spaceShipImage.Left = 800;
             Controls.Add(spaceShipImage); // adding image to form
         }
 

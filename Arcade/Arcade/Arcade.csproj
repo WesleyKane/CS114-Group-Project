@@ -200,9 +200,6 @@
     <None Include="Resources\Station.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MainMenuTheme.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\image.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +243,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\battleshipmainmenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuTheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testmmenugif.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

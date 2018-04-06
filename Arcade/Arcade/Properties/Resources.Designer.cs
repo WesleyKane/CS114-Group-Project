@@ -436,6 +436,16 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap testmmenugif {
+            get {
+                object obj = ResourceManager.GetObject("testmmenugif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap truckLong {
             get {
                 object obj = ResourceManager.GetObject("truckLong", resourceCulture);
