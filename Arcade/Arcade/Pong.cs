@@ -33,8 +33,6 @@ namespace Arcade
         int hit2 = 1;//Variable to determine how many time player2 gets hit
         int size1 = 2;//Variable to alter the size of player1 paddle
         int size2 = 2;//Variable to determine the size pf player2 paddle
-        int Paddlespeed1 = 8;//variable for the speed of player 1's paddle
-        int PaddleSpeed2 = 8;//variable for the speed of player 2's paddle
 
         System.Media.SoundPlayer victory = new System.Media.SoundPlayer(Properties.Resources.GuilesThemeI);//Sound for the winner
         System.Media.SoundPlayer bounce = new System.Media.SoundPlayer(Properties.Resources.Bounce);//Sound effects for the ball hitting an object
@@ -165,7 +163,7 @@ namespace Arcade
                 B2Position /= size2;
                 LoseLife.Play();
                 hit1 += 1;
-                PaddleSpeed2 += 2;//increases the speed of the paddle when it decreases
+
                 shoot1 = false;
             }
 
@@ -190,7 +188,6 @@ namespace Arcade
                 B2.Location = new Point(Player2.Location.X, Player2.Location.Y + B2Position);
                 shoot2 = false;
             }
-
             if (B2.Bounds.IntersectsWith(Player1.Bounds))//player1's paddle decreases if player 2 hits player1
             {
                 Player1.Height /= size1;
@@ -199,7 +196,6 @@ namespace Arcade
                 B1.Height /= size1;
                 LoseLife.Play();
                 hit2 += 1;
-                Paddlespeed1 += 2;//increases the speed of the paddle when its size decreases
                 shoot2 = false;
             }
 
@@ -207,8 +203,8 @@ namespace Arcade
             {
                 int CenterH = ClientSize.Height / 2;
                 int CenterW = ClientSize.Width / 2;
-                Score2++;//adds one to player2 score
                 Score.Play();
+                Score2++;//adds one to player2 score
                 ball.Left = CenterW;//Resets the ball to the middle of the screen
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the ball direction
@@ -223,8 +219,8 @@ namespace Arcade
             {
                 int CenterH = ClientSize.Height / 2;
                 int CenterW = ClientSize.Width / 2;
-                Score1++;//adds one to player1 score
                 Score.Play();
+                Score1++;//adds one to player1 score
                 ball.Left = CenterW;//Resets the ball to the middle of the screen width wise
                 ball.Top = CenterH;//Resets the ball to the center of the screen height wise
                 ballx = -ballx;//Changes the direction of the ball
@@ -269,48 +265,41 @@ namespace Arcade
 
             if (GoUp1 == true & Player1.Top > 0)//allows player1 to move up
             {
-                Player1.Top -= Paddlespeed1;
+                Player1.Top -= 8;
                 GameTimer.Start();
             }
-
-            if (GoDown1 == true & Player2.Top < Player2.Bottom)//allows player1 to move down
+            if (GoUp2 == true & Player2.Top > 0)//allows player2 to move up
             {
-                Player1.Top += Paddlespeed1;
+                Player2.Top -= 8;
                 GameTimer.Start();
             }
 
             if (GoDown2 == true & Player1.Top < Player1.Bottom)//allows player1 to move down
             {
-                Player2.Top += PaddleSpeed2;
+
+                Player2.Top += 8;
                 GameTimer.Start();
             }
-
-            if (GoUp2 == true & Player2.Top > 0)//allows player2 to move up
+            if (GoDown1 == true & Player2.Top < Player2.Bottom)//allows player2 to move down
             {
-                Player2.Top -= PaddleSpeed2;
+                Player1.Top += 8;
                 GameTimer.Start();
             }
-
-
 
             if (Score1 == 10)//IF player 1 scores 10 points then player1 wins
             {
 
                 GameTimer.Stop();
                 victory.Play();
-                MessageBox.Show("Player 1 wins! Click ok to play again.");
+                MessageBox.Show("Player 1 wins!");
                 victory.Stop();
-                Score1 = 0;
-                Score2 = 0;
             }
             if (Score2 == 10)//If player 2 wins then player 2 wins
             {
                 GameTimer.Stop();
                 victory.Play();
-                MessageBox.Show("Player 2 wins! Click ok to play again.");
+                MessageBox.Show("Player 2 wins!");
                 victory.Stop();
-                Score2 = 0;
-                Score1 = 0;
             }
         }
 
