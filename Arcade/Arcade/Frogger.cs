@@ -177,7 +177,6 @@ namespace Arcade
                         lifeLeft--;
                         updateLife();
                         RandomFly();
-						splatSound();
                     }
                 }
             }
@@ -198,25 +197,14 @@ namespace Arcade
             }
         }
 
-        //splat
-        private void splatSound()
+        //Sound sample
+        private void playSimpleSound()
         {
-            SoundPlayer splat = new SoundPlayer(Properties.Resources.splat);
-            splat.Play();
+            SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
+            simpleSound.Play();
         }
-		//jump
-		private void jumpSound()
-		{
-			SoundPlayer splat = new SoundPlayer(Properties.Resources.jump);
-			splat.Play();
-		}        
-		//splash
-		private void splashSound()
-		{
-			SoundPlayer splat = new SoundPlayer(Properties.Resources.splash);
-			splat.Play();
-		}
-		private void greycar_Tick(object sender, EventArgs e)
+
+        private void greycar_Tick(object sender, EventArgs e)
         {
             greycar.Interval = greySpeed;
             //Move Grey Car
@@ -312,29 +300,25 @@ namespace Arcade
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y - 50);
                     Frog.Image = Properties.Resources.froggy;
                     FroggyScore();
-					jumpSound();
                     break;
                 case 's':
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y + 50);
                     Frog.Image = Properties.Resources.froggy_Down;
                     FroggyScore();
-					jumpSound();
-
-					break;
+                    
+                    break;
                 case 'a':
                     Frog.Location = new Point(Frog.Location.X - 25, Frog.Location.Y);
                     Frog.Image = Properties.Resources.froggy_Left;
                     FroggyScore();
-					jumpSound();
 
-					break;
+                    break;
                 case 'd':
                     Frog.Location = new Point(Frog.Location.X + 25, Frog.Location.Y);
                     Frog.Image = Properties.Resources.froggy_Right;
                     FroggyScore();
-					jumpSound();
 
-					break;
+                    break;
             }
             Frog.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -383,7 +367,6 @@ namespace Arcade
                 timeLeft = 1000;
                 RandomFly();
                 updateLife();
-				splashSound();
             }
         }
 
@@ -444,10 +427,5 @@ namespace Arcade
                 Score.Text = Convert.ToString(playerScore);
             }
         }
-
-		private void Frogger_Load(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

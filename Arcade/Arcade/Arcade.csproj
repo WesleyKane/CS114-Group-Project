@@ -251,7 +251,6 @@
     <None Include="Resources\asteroidsstartbutton3.gif" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\firev2.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -352,15 +351,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FroggerMenuImage1.gif" />
-=======
-    <None Include="Resources\jump.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\splash.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\splat.wav" />
->>>>>>> d34d851d440a0ec56be16add7f06d02e920cdb39
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
