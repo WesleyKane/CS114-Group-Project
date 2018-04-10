@@ -136,3 +136,6 @@ C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.csproj.CoreCompileInputs.cache
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.exe
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.pdb
+C:\Users\Jundee Lawrence\Documents\GitHub\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Asteroids.resources
+C:\Users\Jundee Lawrence\Documents\GitHub\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.BattleShip.resources
+C:\Users\Jundee Lawrence\Documents\GitHub\CS114-Group-Project\Arcade\Arcade\obj\Debug\Arcade.Frogger.resources
