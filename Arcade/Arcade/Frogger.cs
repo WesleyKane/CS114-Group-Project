@@ -177,6 +177,7 @@ namespace Arcade
                         lifeLeft--;
                         updateLife();
                         RandomFly();
+                        hitSound();
                     }
                 }
             }
@@ -197,13 +198,24 @@ namespace Arcade
             }
         }
 
-        //Sound sample
-        private void playSimpleSound()
+        //Jump Sound
+        private void jumpSound()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
-            simpleSound.Play();
+            SoundPlayer jump = new SoundPlayer(Properties.Resources.jump);
+            jump.Play();
         }
-
+        //splash Sound
+        private void splashSound()
+        {
+            SoundPlayer splash = new SoundPlayer(Properties.Resources.splash);
+            splash.Play();
+        }
+        //hit Sound
+        private void hitSound()
+        {
+            SoundPlayer hit = new SoundPlayer(Properties.Resources.splat);
+            hit.Play();
+        }
         private void greycar_Tick(object sender, EventArgs e)
         {
             greycar.Interval = greySpeed;
@@ -300,24 +312,25 @@ namespace Arcade
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y - 50);
                     Frog.Image = Properties.Resources.froggy;
                     FroggyScore();
+                    jumpSound();
                     break;
                 case 's':
                     Frog.Location = new Point(Frog.Location.X, Frog.Location.Y + 50);
                     Frog.Image = Properties.Resources.froggy_Down;
                     FroggyScore();
-                    
+                    jumpSound();
                     break;
                 case 'a':
                     Frog.Location = new Point(Frog.Location.X - 25, Frog.Location.Y);
                     Frog.Image = Properties.Resources.froggy_Left;
                     FroggyScore();
-
+                    jumpSound();
                     break;
                 case 'd':
                     Frog.Location = new Point(Frog.Location.X + 25, Frog.Location.Y);
                     Frog.Image = Properties.Resources.froggy_Right;
                     FroggyScore();
-
+                    jumpSound();
                     break;
             }
             Frog.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -362,6 +375,7 @@ namespace Arcade
             //Restart if the frog is in the water    
             if (Frog.Location.Y < 300 && Frog.Location.Y > 20 && inwater == true)
             {
+                splashSound();
                 lifeLeft--;
                 restartFrog();
                 timeLeft = 1000;

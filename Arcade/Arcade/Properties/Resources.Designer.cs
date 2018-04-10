@@ -365,6 +365,15 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream jump {
+            get {
+                return ResourceManager.GetStream("jump", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Laser_Shoot1 {
             get {
                 return ResourceManager.GetStream("Laser_Shoot1", resourceCulture);
@@ -555,6 +564,24 @@ namespace Arcade.Properties {
             get {
                 object obj = ResourceManager.GetObject("smalllog", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream splash {
+            get {
+                return ResourceManager.GetStream("splash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream splat {
+            get {
+                return ResourceManager.GetStream("splat", resourceCulture);
             }
         }
         
