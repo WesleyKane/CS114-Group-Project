@@ -51,12 +51,6 @@
     <Compile Include="Asteroids.Designer.cs">
       <DependentUpon>Asteroids.cs</DependentUpon>
     </Compile>
-    <Compile Include="BattleShip.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BattleShip.Designer.cs">
-      <DependentUpon>BattleShip.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,9 +73,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Asteroids.resx">
       <DependentUpon>Asteroids.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BattleShip.resx">
-      <DependentUpon>BattleShip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -123,9 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\asteroid.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ship.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ship2.jpg" />
@@ -261,6 +249,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\asteroidsstartbutton3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firev2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mainmenumusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astDeathSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astMainMenuSong.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astMainMenuSong.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astExitButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astExitButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astExitButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astExitButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astExitButton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menugraphic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menugraphic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astStartButtonv2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astStartButtonv21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astStartButtonv22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astStartButtonv23.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ammoSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astPlayButtonSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGifv2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGifv21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGif2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongMenuImage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuGif3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongMenuImage1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongMenuImage2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsteroidsMenuImage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FroggerMenuImage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FroggerMenuImage1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

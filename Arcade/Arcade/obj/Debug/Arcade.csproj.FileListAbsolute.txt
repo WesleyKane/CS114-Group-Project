@@ -136,3 +136,16 @@ C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.csproj.CoreCompileInputs.cache
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.exe
 C:\Users\Wesley\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.pdb
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\bin\Debug\Arcade.exe.config
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\bin\Debug\Arcade.exe
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\bin\Debug\Arcade.pdb
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.csprojResolveAssemblyReference.cache
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.Asteroids.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.BattleShip.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.MainMenu.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.Frogger.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.Pong.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.Properties.Resources.resources
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.csproj.GenerateResource.Cache
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.exe
+T:\Profiles\Users\wesley.kane\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.pdb

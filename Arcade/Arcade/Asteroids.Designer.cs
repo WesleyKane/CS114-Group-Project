@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asteroids));
             this.asteroidTimer = new System.Windows.Forms.Timer(this.components);
             this.missleTimer = new System.Windows.Forms.Timer(this.components);
             this.ScoreTracker = new System.Windows.Forms.Label();
+            this.astLogoPicBox = new System.Windows.Forms.PictureBox();
+            this.ExitButton = new System.Windows.Forms.PictureBox();
             this.startButton = new System.Windows.Forms.PictureBox();
+            this.MenuGraphic = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
@@ -70,7 +74,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.ammoIndicator = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.astLogoPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.startButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuGraphic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
@@ -108,6 +118,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ammoIndicator)).BeginInit();
             this.SuspendLayout();
             // 
             // asteroidTimer
@@ -125,7 +138,7 @@
             this.ScoreTracker.AutoSize = true;
             this.ScoreTracker.Font = new System.Drawing.Font("Copperplate Gothic Light", 17.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreTracker.ForeColor = System.Drawing.SystemColors.Control;
-            this.ScoreTracker.Location = new System.Drawing.Point(1307, 14);
+            this.ScoreTracker.Location = new System.Drawing.Point(1117, 9);
             this.ScoreTracker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ScoreTracker.Name = "ScoreTracker";
             this.ScoreTracker.Size = new System.Drawing.Size(97, 25);
@@ -133,18 +146,56 @@
             this.ScoreTracker.Text = "Score:";
             this.ScoreTracker.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ScoreTracker.UseMnemonic = false;
+            this.ScoreTracker.Click += new System.EventHandler(this.ScoreTracker_Click);
+            // 
+            // astLogoPicBox
+            // 
+            this.astLogoPicBox.BackgroundImage = global::Arcade.Properties.Resources.astLogo1;
+            this.astLogoPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.astLogoPicBox.Location = new System.Drawing.Point(763, 577);
+            this.astLogoPicBox.Margin = new System.Windows.Forms.Padding(2);
+            this.astLogoPicBox.Name = "astLogoPicBox";
+            this.astLogoPicBox.Size = new System.Drawing.Size(500, 110);
+            this.astLogoPicBox.TabIndex = 44;
+            this.astLogoPicBox.TabStop = false;
+            this.astLogoPicBox.Click += new System.EventHandler(this.astLogoPicBox_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.Color.Black;
+            this.ExitButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitButton.BackgroundImage")));
+            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ExitButton.Location = new System.Drawing.Point(9, 10);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(67, 44);
+            this.ExitButton.TabIndex = 42;
+            this.ExitButton.TabStop = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // startButton
             // 
             this.startButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.startButton.Image = global::Arcade.Properties.Resources.asteroidsstartbutton3;
-            this.startButton.Location = new System.Drawing.Point(529, 200);
+            this.startButton.Image = global::Arcade.Properties.Resources.astStartButtonv23;
+            this.startButton.Location = new System.Drawing.Point(545, 584);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(312, 112);
+            this.startButton.Size = new System.Drawing.Size(204, 85);
             this.startButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.startButton.TabIndex = 41;
             this.startButton.TabStop = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // MenuGraphic
+            // 
+            this.MenuGraphic.BackgroundImage = global::Arcade.Properties.Resources.menugraphic1;
+            this.MenuGraphic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MenuGraphic.Location = new System.Drawing.Point(-2, 0);
+            this.MenuGraphic.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuGraphic.Name = "MenuGraphic";
+            this.MenuGraphic.Size = new System.Drawing.Size(1265, 681);
+            this.MenuGraphic.TabIndex = 43;
+            this.MenuGraphic.TabStop = false;
+            this.MenuGraphic.Click += new System.EventHandler(this.MenuGraphic_Click);
             // 
             // pictureBox31
             // 
@@ -516,14 +567,50 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::Arcade.Properties.Resources.star;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(1242, 120);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(10, 10);
+            this.pictureBox8.TabIndex = 45;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = global::Arcade.Properties.Resources.star;
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox17.Location = new System.Drawing.Point(1219, 558);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(10, 10);
+            this.pictureBox17.TabIndex = 46;
+            this.pictureBox17.TabStop = false;
+            // 
+            // ammoIndicator
+            // 
+            this.ammoIndicator.BackgroundImage = global::Arcade.Properties.Resources.ammoSquare;
+            this.ammoIndicator.Location = new System.Drawing.Point(1187, 66);
+            this.ammoIndicator.Name = "ammoIndicator";
+            this.ammoIndicator.Size = new System.Drawing.Size(27, 50);
+            this.ammoIndicator.TabIndex = 47;
+            this.ammoIndicator.TabStop = false;
+            this.ammoIndicator.Click += new System.EventHandler(this.ammoIndicator_Click);
+            // 
             // Asteroids
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1458, 761);
-            this.Controls.Add(this.startButton);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.ammoIndicator);
+            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.astLogoPicBox);
             this.Controls.Add(this.ScoreTracker);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.MenuGraphic);
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox33);
@@ -565,7 +652,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asteroids";
             this.Load += new System.EventHandler(this.Asteroids_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.astLogoPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.startButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuGraphic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
@@ -603,6 +693,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ammoIndicator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -651,5 +744,11 @@
         private System.Windows.Forms.Timer missleTimer;
         private System.Windows.Forms.Label ScoreTracker;
         private System.Windows.Forms.PictureBox startButton;
+        private System.Windows.Forms.PictureBox ExitButton;
+        private System.Windows.Forms.PictureBox MenuGraphic;
+        private System.Windows.Forms.PictureBox astLogoPicBox;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox ammoIndicator;
     }
 }

@@ -12,18 +12,29 @@ namespace Arcade
 {
     public partial class Asteroids : Form
     {
-        bool button1 = false;
+        // FOR SOUNDS AND GRAPHICS http://www.classicgaming.cc/classics/asteroids/
         System.Media.SoundPlayer asteroidHit = new System.Media.SoundPlayer(Properties.Resources.astHit);
-        System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.fire);
+        System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.firev2);
+        System.Media.SoundPlayer deathSound = new System.Media.SoundPlayer(Properties.Resources.astDeathSound);
+        System.Media.SoundPlayer menuSong = new System.Media.SoundPlayer(Properties.Resources.astMainMenuSong);
+        System.Media.SoundPlayer playSound = new System.Media.SoundPlayer(Properties.Resources.astPlayButtonSound);
         int facingDirection, bulletDirection, score;
         PictureBox explosion = new PictureBox();
         PictureBox spaceShipImage = new PictureBox(); // test123
         PictureBox[] asteroidsImage = new PictureBox[5]; // setitng up array for asteroid images.
         PictureBox missleImage = new PictureBox();
         bool fire = false;
-        int[,] coordAsteroids = { { -100, 950 }, { -100, -100 }, { 1700, 500 }, { 1700, -100 }, { 1650, 1400 } }; // sets coordinated for each asteroids. Some are off screen to simulate the astoeroids flying in.
+        int[,] coordAsteroids = { { -100, 950 }, { -100, -100 }, { 1500, 500 }, { 1300, -100 }, { 1300, 800 } }; // sets coordinated for each asteroids. Some are off screen to simulate the astoeroids flying in.
 
 
+        private void playMenuSounds()
+        {
+            menuSong.Play();
+        }
+        private void playDeathSound()
+        {
+            deathSound.Play();
+        }
         private void playAsteroidHit()
         {
             asteroidHit.Play();
@@ -32,6 +43,10 @@ namespace Arcade
         {
             missleFire.Play();
         }
+        private void playButtonSound()
+        {
+            playSound.Play();
+        }
         public Asteroids()
         {
             InitializeComponent();
@@ -39,14 +54,30 @@ namespace Arcade
         }
         private void startButton_Click(object sender, EventArgs e)
         {
+            menuSong.Stop();
+            playButtonSound();
+
+            startButton.Hide();
+            MenuGraphic.Hide();
+            astLogoPicBox.Hide();
+
+            ammoIndicator.Show();
             AsteroidSetup();
             AsteroidMovement();
             ShipSetup();
-            startButton.Hide();
-        }
-        private void Asteroids_Load(object sender, EventArgs e) // main form.
-        {
             
+        }
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            menuSong.Stop();         
+        }
+
+
+        private void Asteroids_Load(object sender, EventArgs e) // menu form
+        { 
+            playMenuSounds();
+            ammoIndicator.Hide();
         }
         void ShipSetup() // space ship spawn.
         {
@@ -56,8 +87,8 @@ namespace Arcade
             facingDirection = 0;
 
             //position of image 
-            spaceShipImage.Top = 500;
-            spaceShipImage.Left = 800;
+            spaceShipImage.Top = 350;
+            spaceShipImage.Left = 600;
             Controls.Add(spaceShipImage); // adding image to form
         }
 
@@ -68,7 +99,7 @@ namespace Arcade
             {
                 asteroidsImage[i] = new PictureBox(); // creating new picture box.
                 asteroidsImage[i].Image = Properties.Resources.asteroid2;
-                asteroidsImage[i].Size = new Size(100, 100); //setting size
+                asteroidsImage[i].Size = new Size(85, 85); //setting size
                 asteroidsImage[i].SizeMode = PictureBoxSizeMode.StretchImage; // stretching image.
 
                 //position of image relative to form coordinates.
@@ -97,8 +128,8 @@ namespace Arcade
             }
             else // if the asteroid is in bounds, continue moving the asteroid.
             {
-                asteroidsImage[0].Left += 4;
-                asteroidsImage[0].Top -= 4;
+                asteroidsImage[0].Left += 2;
+                asteroidsImage[0].Top -= 2;
             }
 
 
@@ -110,8 +141,8 @@ namespace Arcade
             }
             else
             {
-                asteroidsImage[1].Left += 3; // direction of movement using coordinates
-                asteroidsImage[1].Top += 2;
+                asteroidsImage[1].Left += 1; // direction of movement using coordinates
+                asteroidsImage[1].Top += 1;
             }
 
 
@@ -123,7 +154,7 @@ namespace Arcade
             }
             else
             {
-                asteroidsImage[2].Left -= 4;
+                asteroidsImage[2].Left -= 2;
                 asteroidsImage[2].Top -= 1;
             }
 
@@ -136,8 +167,8 @@ namespace Arcade
             }
             else
             {
-                asteroidsImage[3].Left -= 5;
-                asteroidsImage[3].Top += 3;
+                asteroidsImage[3].Left -= 3;
+                asteroidsImage[3].Top += 1;
             }
 
 
@@ -149,8 +180,8 @@ namespace Arcade
             }
             else
             {
-                asteroidsImage[4].Left -= 7;
-                asteroidsImage[4].Top -= 4;
+                asteroidsImage[4].Left -= 4;
+                asteroidsImage[4].Top -= 2;
             }
 
             for (int i = 0; i < 5; i++) // if one of 5 asteroids hits the ship.
@@ -163,9 +194,10 @@ namespace Arcade
                     asteroidsImage[3].Visible = false;
                     asteroidsImage[4].Visible = false;
                     spaceShipImage.Visible = false;
-                    playAsteroidHit();
+                    playDeathSound();
+                    asteroidTimer.Stop();
+                    missleTimer.Stop();
                     MessageBox.Show("Game over! Score: " + score + "");
-                    
                     this.Close();
                     Asteroids asteroids = new Asteroids();
                     asteroids.Show();
@@ -176,20 +208,21 @@ namespace Arcade
 
         void missleTimer_Tick(object sender, EventArgs e)
         {
-
+            
             if (!fire)
             {
+                ammoIndicator.Hide();
                 missleImage.BackColor = Color.Red;
                 MissleStartPosition();
                 missleImage.Size = new Size(10, 15);
                 playMissleFire();
                 Controls.Add(missleImage);
                 fire = true;
-            }
+                
+            }           
             MissleMovement();
             MissleHitDetection();
         }
-
 
 
         void ShipMoveEvent(object sender, KeyEventArgs e) // when keys are pressed to rotate ship.
@@ -200,16 +233,16 @@ namespace Arcade
                 //WASD ship movement
                 case Keys.W:
                     //spaceShipImage.Left -= 5;
-                    spaceShipImage.Top -= 11;
+                    spaceShipImage.Top -= 18;
                     break;
                 case Keys.S:
-                    spaceShipImage.Top += 11;
+                    spaceShipImage.Top += 18;
                     break;
                 case Keys.A:
-                    spaceShipImage.Left -= 11;
+                    spaceShipImage.Left -= 18;
                     break;
                 case Keys.D:
-                    spaceShipImage.Left += 11;
+                    spaceShipImage.Left += 18;
                     break;
 
                 case Keys.Space:
@@ -247,53 +280,51 @@ namespace Arcade
                     }
                     break;
 
-
             }
 
         }
         void MissleMovement()
         {
-            //bulletDirection = facingDirection; // THIS IS WHAT WAS SCREWING ME UP!!!!!!!!!!!!
-
+            
             switch (bulletDirection)
             {
                 case 0:
                     if (missleImage.Bottom >= 0)
                     {
-                        missleImage.Top -= 9;
-
+                        missleImage.Top -= 14;
                     }
                     else
                     {
                         fire = false;
+                        ammoIndicator.Show();
                         missleTimer.Enabled = false;
                         Controls.Remove(missleImage);
                     }
                     break;
-
 
                 case 1: // firing right
                     if (missleImage.Right <= this.ClientSize.Width)
                     {
-                        missleImage.Left += 9;
+                        missleImage.Left += 14;
                     }
                     else
                     {
                         fire = false;
+                        ammoIndicator.Show();
                         missleTimer.Enabled = false;
                         Controls.Remove(missleImage);
                     }
                     break;
 
-
                 case 2: // firing down
                     if (missleImage.Top <= this.ClientSize.Height)
                     {
-                        missleImage.Top += 9;
+                        missleImage.Top += 14;
                     }
                     else
                     {
                         fire = false;
+                        ammoIndicator.Show();
                         missleTimer.Enabled = false;
                         Controls.Remove(missleImage);
                     }
@@ -303,18 +334,17 @@ namespace Arcade
                 case 3: // firing left.
                     if (missleImage.Left >= -50)
                     {
-                        missleImage.Left -= 9;
+                        missleImage.Left -= 14;
                     }
                     else
                     {
                         fire = false;
+                        ammoIndicator.Show();
                         missleTimer.Enabled = false;
                         Controls.Remove(missleImage);
                     }
                     break;
             }
-
-
 
 
         }
@@ -345,9 +375,8 @@ namespace Arcade
                 }
             }
         }
-
+    
         
-
         void MissleHitDetection() // if the missle comes into intersection contact with an asteroid image...
         {
             if (fire) // if a missle fires..
@@ -365,7 +394,7 @@ namespace Arcade
                         explosion.Top = asteroidsImage[i].Top;
                         Controls.Add(explosion);
                         explosionGif();
-
+                        ammoIndicator.Show();
 
                         asteroidsImage[i].Visible = false;
                         fire = false;
@@ -388,5 +417,25 @@ namespace Arcade
         }
 
 
+
+        private void MenuGraphic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ammoIndicator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void astLogoPicBox_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ScoreTracker_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
