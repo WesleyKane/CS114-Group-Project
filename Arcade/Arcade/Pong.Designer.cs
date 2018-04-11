@@ -51,7 +51,7 @@
             this.Player1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Player1.BackColor = System.Drawing.SystemColors.Window;
             this.Player1.Location = new System.Drawing.Point(9, 150);
-            this.Player1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Player1.Margin = new System.Windows.Forms.Padding(2);
             this.Player1.Name = "Player1";
             this.Player1.Size = new System.Drawing.Size(20, 103);
             this.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -64,7 +64,7 @@
             this.Player2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Player2.BackColor = System.Drawing.Color.White;
             this.Player2.Location = new System.Drawing.Point(673, 150);
-            this.Player2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Player2.Margin = new System.Windows.Forms.Padding(2);
             this.Player2.Name = "Player2";
             this.Player2.Size = new System.Drawing.Size(20, 103);
             this.Player2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,7 +76,7 @@
             this.ball.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ball.BackColor = System.Drawing.Color.White;
             this.ball.Location = new System.Drawing.Point(350, 194);
-            this.ball.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ball.Margin = new System.Windows.Forms.Padding(2);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(20, 21);
             this.ball.TabIndex = 2;
@@ -123,7 +123,7 @@
             this.B1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.B1.BackColor = System.Drawing.Color.DarkRed;
             this.B1.Location = new System.Drawing.Point(9, 194);
-            this.B1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B1.Margin = new System.Windows.Forms.Padding(2);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(20, 21);
             this.B1.TabIndex = 5;
@@ -134,7 +134,7 @@
             this.B2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.B2.BackColor = System.Drawing.Color.DarkRed;
             this.B2.Location = new System.Drawing.Point(673, 194);
-            this.B2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B2.Margin = new System.Windows.Forms.Padding(2);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(20, 21);
             this.B2.TabIndex = 6;
@@ -145,7 +145,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox2.Location = new System.Drawing.Point(357, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(5, 460);
             this.pictureBox2.TabIndex = 8;
@@ -165,8 +165,9 @@
             this.Controls.Add(this.Player1Score);
             this.Controls.Add(this.Player2);
             this.Controls.Add(this.Player1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Pong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pong";
             this.Load += new System.EventHandler(this.Pong_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
