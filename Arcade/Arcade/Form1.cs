@@ -12,45 +12,41 @@ namespace Arcade
 {
     public partial class MainMenu : Form
     {
+
+        System.Media.SoundPlayer menuMusic = new System.Media.SoundPlayer(Properties.Resources.Mainmenumusic);
         public MainMenu()
         {
-            InitializeComponent();
+            InitializeComponent();     
         }
 
+        private void playMenuMusic()
+        {
+            menuMusic.Play();
+        }
         private void MainMenu_Load(object sender, EventArgs e) // main menu
         {
-
+            playMenuMusic();
         }
 
-
-
-
-
-
-
-        //Main menu buttons
-        private void Pacman_Click(object sender, EventArgs e) //Open pacman form (button)
+        // Menu Buttons
+        private void PongButton_Click(object sender, EventArgs e)
+        {
+            Pong pong = new Pong();
+            menuMusic.Stop();
+            pong.Show();
+        }
+        private void FroggerButton_Click(object sender, EventArgs e)
         {
             Frogger frogger = new Frogger();
+            menuMusic.Stop();
             frogger.Show();
         }
 
-        private void Asteroids_Click(object sender, EventArgs e) // open steroids form (button)
+        private void AsteroidsButton_Click(object sender, EventArgs e)
         {
             Asteroids asteroids = new Asteroids();
-            asteroids.Show();      
-        }
-
-        private void Pong_Click(object sender, EventArgs e)// open Pong form (button)
-        {
-            Pong pong = new Pong();
-            pong.Show();
-        }
-
-        private void Battleship_Click(object sender, EventArgs e)// open Battleship form (button)
-        {
-            BattleShip battle = new BattleShip();
-            battle.Show();
+            menuMusic.Stop();
+            asteroids.Show();
         }
 
         private void Exit_Click(object sender, EventArgs e) // exit button
@@ -59,6 +55,16 @@ namespace Arcade
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
 
         }

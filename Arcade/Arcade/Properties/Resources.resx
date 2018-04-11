@@ -118,109 +118,175 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ship2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ship" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asteroid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ship4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ship4.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="astStartButtonv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astStartButtonv2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ship3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="asteroid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asteroid2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="space_backround" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\space backround1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="astHit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\astHit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fire.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fly.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="frogger_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frogger background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="froggy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\froggy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="froggy_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\froggy_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="froggy_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\froggy_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="froggy_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\froggy_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="get_images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\get images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="green_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\green car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grey_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grey car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LongLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LongLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pink_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pink car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="smalllog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\smalllog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="truckLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\truckLong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="turtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\turtle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MainMenuTheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainMenuTheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ship_blowing_up_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship-blowing-up-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BattleShipBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BattleShipBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BattleShipFireIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BattleShipFireIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BattleShipMissIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BattleShipMissIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bounce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bounce.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GuilesThemeI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GuilesThemeI.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Laser_Shoot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Laser_Shoot1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="astStartButtonv23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astStartButtonv23.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoseLife" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoseLife.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="LongLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LongLog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menugraphic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menugraphic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FroggerMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FroggerMenuImage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smalllog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smalllog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenuGif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuGif1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pongmainmenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pongmainmenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astHit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astHit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bounce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bounce.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="astExitButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astExitButton1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenuGif2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuGif2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pongMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pongMenuImage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asteroid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asteroid2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AsteroidsMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AsteroidsMenuImage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="froggy_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\froggy_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firev2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firev2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pongmainmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pongmainmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="froggy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\froggy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explosion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fire.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="astMainMenuSong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astMainMenuSong.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="frogger_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frogger background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenuGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pink_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pink car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\green car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astDeathSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astDeathSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="turtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turtle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="froggy_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\froggy_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenuGif3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuGif3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="get_images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\get images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuilesThemeI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuilesThemeI.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MainMenuTheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuTheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laser_Shoot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Laser_Shoot1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="astStartButtonv21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astStartButtonv21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="froggy_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\froggy_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mainmenumusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mainmenumusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="astLogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astLogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ammoSquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ammoSquare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menugraphic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menugraphic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astExitButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astExitButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fly.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Power_Up2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Power_Up2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pongMenuImage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pongMenuImage2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="truckLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\truckLong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grey_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grey car.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astPlayButtonSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astPlayButtonSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pongMenuImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pongMenuImage1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astStartButtonv22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\astStartButtonv22.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FroggerMenuImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FroggerMenuImage1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jump.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="splat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
