@@ -189,10 +189,10 @@
             // 
             this.MenuGraphic.BackgroundImage = global::Arcade.Properties.Resources.menugraphic1;
             this.MenuGraphic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MenuGraphic.Location = new System.Drawing.Point(-2, 0);
+            this.MenuGraphic.Location = new System.Drawing.Point(1, 0);
             this.MenuGraphic.Margin = new System.Windows.Forms.Padding(2);
             this.MenuGraphic.Name = "MenuGraphic";
-            this.MenuGraphic.Size = new System.Drawing.Size(1265, 681);
+            this.MenuGraphic.Size = new System.Drawing.Size(1262, 681);
             this.MenuGraphic.TabIndex = 43;
             this.MenuGraphic.TabStop = false;
             this.MenuGraphic.Click += new System.EventHandler(this.MenuGraphic_Click);
@@ -607,7 +607,6 @@
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.astLogoPicBox);
-            this.Controls.Add(this.ScoreTracker);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.MenuGraphic);
@@ -648,6 +647,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ScoreTracker);
             this.Name = "Asteroids";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asteroids";

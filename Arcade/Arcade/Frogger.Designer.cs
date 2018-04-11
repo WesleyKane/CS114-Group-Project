@@ -995,6 +995,7 @@
             this.Controls.Add(this.PinkCar1);
             this.Controls.Add(this.timeLabel);
             this.Name = "Frogger";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frogger";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frogger_KeyPress_1);
             ((System.ComponentModel.ISupportInitialize)(this.TimeBox)).EndInit();
