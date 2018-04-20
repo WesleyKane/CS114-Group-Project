@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//images used
+//https://giphy.com/gifs/pong-aTGwuEFyg6d8c
+//https://giphy.com/gifs/it-follows-dTQzKgfWqniuc
+//https://giphy.com/gifs/street-c50uYGAqiRKp2
 namespace Arcade
 {
     public partial class MainMenu : Form

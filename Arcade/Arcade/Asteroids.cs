@@ -8,11 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+// FOR SOUNDS AND GRAPHICS
+// http://www.classicgaming.cc/classics/asteroids/
+// https://clipartxtras.com/download/b15a10a58936140c8c2e3ae13f02a305d6e5da5c.html
+// http://pixelartmaker.com/gallery?start=45900
+//https://giphy.com/gifs/animation-fire-smoke-d4aVHC1HKnButuXC
+
 namespace Arcade
 {
     public partial class Asteroids : Form
     {
-        // FOR SOUNDS AND GRAPHICS http://www.classicgaming.cc/classics/asteroids/
+        
         System.Media.SoundPlayer asteroidHit = new System.Media.SoundPlayer(Properties.Resources.astHit);
         System.Media.SoundPlayer missleFire = new System.Media.SoundPlayer(Properties.Resources.firev2);
         System.Media.SoundPlayer deathSound = new System.Media.SoundPlayer(Properties.Resources.astDeathSound);
