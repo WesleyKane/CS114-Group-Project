@@ -441,5 +441,10 @@ namespace Arcade
                 Score.Text = Convert.ToString(playerScore);
             }
         }
+
+        private void Frogger_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

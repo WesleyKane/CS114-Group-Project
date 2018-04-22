@@ -997,6 +997,7 @@
             this.Name = "Frogger";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frogger";
+            this.Load += new System.EventHandler(this.Frogger_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frogger_KeyPress_1);
             ((System.ComponentModel.ISupportInitialize)(this.TimeBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Frog)).EndInit();

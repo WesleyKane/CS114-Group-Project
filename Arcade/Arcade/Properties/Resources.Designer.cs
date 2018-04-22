@@ -92,9 +92,39 @@ namespace Arcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asteroidmenuimagev3 {
+            get {
+                object obj = ResourceManager.GetObject("asteroidmenuimagev3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AsteroidsMenuImage {
             get {
                 object obj = ResourceManager.GetObject("AsteroidsMenuImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asteroidsmenuv2 {
+            get {
+                object obj = ResourceManager.GetObject("asteroidsmenuv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asteroidsmenuv21 {
+            get {
+                object obj = ResourceManager.GetObject("asteroidsmenuv21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -361,5 +361,14 @@
   <ItemGroup>
     <None Include="Resources\splat.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsmenuv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidsmenuv21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asteroidmenuimagev3.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
