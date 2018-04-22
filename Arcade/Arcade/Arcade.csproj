@@ -63,6 +63,12 @@
     <Compile Include="Frogger.Designer.cs">
       <DependentUpon>Frogger.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberShuffle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberShuffle.Designer.cs">
+      <DependentUpon>NumberShuffle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frogger.resx">
       <DependentUpon>Frogger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberShuffle.resx">
+      <DependentUpon>NumberShuffle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pong.resx">
       <DependentUpon>Pong.cs</DependentUpon>
@@ -369,6 +378,132 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\asteroidmenuimagev3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115175-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115176-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115177-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115177-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115177-hi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115190-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115191-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115192-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115193-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115194-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115204-hi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115204-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thN128KJB9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grid-pac-man-8970124-1680-10501.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thN128KJB91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115192-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grid-pac-man-8970124-1680-1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115191-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115193-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logro_113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115193-hi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115204-hi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115194-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115177-hi3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115176-hi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

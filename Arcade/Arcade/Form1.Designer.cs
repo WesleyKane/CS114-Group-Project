@@ -48,10 +48,10 @@
             this.Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit.Location = new System.Drawing.Point(260, 837);
-            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Exit.Location = new System.Drawing.Point(195, 680);
+            this.Exit.Margin = new System.Windows.Forms.Padding(2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(119, 42);
+            this.Exit.Size = new System.Drawing.Size(89, 34);
             this.Exit.TabIndex = 4;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = false;
@@ -60,10 +60,11 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox5.Location = new System.Drawing.Point(355, 491);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.BackgroundImage = global::Arcade.Properties.Resources.key;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(266, 399);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(239, 172);
+            this.pictureBox5.Size = new System.Drawing.Size(179, 140);
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
@@ -71,10 +72,9 @@
             // AsteroidsButton
             // 
             this.AsteroidsButton.Image = global::Arcade.Properties.Resources.asteroidmenuimagev3;
-            this.AsteroidsButton.Location = new System.Drawing.Point(72, 491);
-            this.AsteroidsButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AsteroidsButton.Location = new System.Drawing.Point(54, 399);
             this.AsteroidsButton.Name = "AsteroidsButton";
-            this.AsteroidsButton.Size = new System.Drawing.Size(243, 172);
+            this.AsteroidsButton.Size = new System.Drawing.Size(182, 140);
             this.AsteroidsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AsteroidsButton.TabIndex = 9;
             this.AsteroidsButton.TabStop = false;
@@ -83,10 +83,9 @@
             // FroggerButton
             // 
             this.FroggerButton.Image = global::Arcade.Properties.Resources.FroggerMenuImage1;
-            this.FroggerButton.Location = new System.Drawing.Point(355, 298);
-            this.FroggerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.FroggerButton.Location = new System.Drawing.Point(266, 242);
             this.FroggerButton.Name = "FroggerButton";
-            this.FroggerButton.Size = new System.Drawing.Size(239, 172);
+            this.FroggerButton.Size = new System.Drawing.Size(179, 140);
             this.FroggerButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FroggerButton.TabIndex = 8;
             this.FroggerButton.TabStop = false;
@@ -95,10 +94,9 @@
             // PongButton
             // 
             this.PongButton.Image = global::Arcade.Properties.Resources.pongMenuImage2;
-            this.PongButton.Location = new System.Drawing.Point(72, 298);
-            this.PongButton.Margin = new System.Windows.Forms.Padding(4);
+            this.PongButton.Location = new System.Drawing.Point(54, 242);
             this.PongButton.Name = "PongButton";
-            this.PongButton.Size = new System.Drawing.Size(243, 172);
+            this.PongButton.Size = new System.Drawing.Size(182, 140);
             this.PongButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PongButton.TabIndex = 7;
             this.PongButton.TabStop = false;
@@ -107,10 +105,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Arcade.Properties.Resources.MainMenuGif2;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 277);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(24, 225);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(596, 414);
+            this.pictureBox2.Size = new System.Drawing.Size(447, 336);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -120,21 +117,21 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Arcade.Properties.Resources.MainMenuTheme;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(665, 903);
+            this.pictureBox1.Size = new System.Drawing.Size(499, 734);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(657, 907);
+            this.ClientSize = new System.Drawing.Size(493, 737);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.AsteroidsButton);
             this.Controls.Add(this.FroggerButton);
@@ -142,7 +139,7 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
