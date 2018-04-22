@@ -34,6 +34,8 @@ namespace Arcade
         int[,] coordAsteroids = { { -100, 950 }, { -100, -100 }, { 1500, 500 }, { 1300, -100 }, { 1300, 800 } }; // sets coordinated for each asteroids. Some are off screen to simulate the astoeroids flying in.
 
 
+
+        //all sounds for the game
         private void playMenuSounds()
         {
             menuSong.Play();
@@ -59,6 +61,8 @@ namespace Arcade
             InitializeComponent();
             KeyDown += new KeyEventHandler(ShipMoveEvent);
         }
+
+        //once start button is clicked
         private void startButton_Click(object sender, EventArgs e)
         {
             menuSong.Stop();
@@ -74,7 +78,7 @@ namespace Arcade
             ShipSetup();
             
         }
-        private void ExitButton_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e) // exit button
         {
             this.Close();
             menuSong.Stop();         
@@ -86,6 +90,7 @@ namespace Arcade
             playMenuSounds();
             ammoIndicator.Hide();
         }
+
         void ShipSetup() // space ship spawn.
         {
             spaceShipImage.Image = Properties.Resources.ship4;
@@ -213,7 +218,7 @@ namespace Arcade
             }
         }
 
-        void missleTimer_Tick(object sender, EventArgs e)
+        void missleTimer_Tick(object sender, EventArgs e)  // spawning in missle image.
         {
             
             if (!fire)
@@ -290,7 +295,7 @@ namespace Arcade
             }
 
         }
-        void MissleMovement()
+        void MissleMovement() // moves the missle once it is fired.
         {
             
             switch (bulletDirection)
@@ -355,7 +360,7 @@ namespace Arcade
 
 
         }
-        void MissleStartPosition() // start position.
+        void MissleStartPosition() // start position for missle, making sure is spawns at the tip of the ship.
         {
             if (!fire)
             {
@@ -416,7 +421,7 @@ namespace Arcade
                 }
             }
         }
-        private async void explosionGif()
+        private async void explosionGif() // function for playing the explosion gif for asteroid explosions.
         {
             await Task.Delay(1500);
             explosion.Visible = false;
