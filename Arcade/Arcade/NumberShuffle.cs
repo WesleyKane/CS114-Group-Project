@@ -55,7 +55,7 @@ namespace Arcade
             Box3.SizeMode = PictureBoxSizeMode.StretchImage;
             images[4] = Properties.Resources.logro_11;
             Box4.SizeMode = PictureBoxSizeMode.StretchImage;
-            images[5] = Properties.Resources.ammoSquare;
+            images[5] = Properties.Resources.fire1;
             Box5.SizeMode = PictureBoxSizeMode.StretchImage;
             images[6] = Properties.Resources._115191_hi;
             Box6.SizeMode = PictureBoxSizeMode.StretchImage;

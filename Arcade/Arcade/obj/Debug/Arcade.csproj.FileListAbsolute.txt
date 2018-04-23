@@ -165,3 +165,4 @@ C:\Users\dolph\Desktop\CS114-Group-Project-Polished-Pre-Master\Arcade\Arcade\bin
 C:\Users\dolph\Desktop\CS114-Group-Project-Polished-Pre-Master\Arcade\Arcade\bin\Debug\Arcade.exe
 C:\Users\dolph\Desktop\CS114-Group-Project-Polished-Pre-Master\Arcade\Arcade\bin\Debug\Arcade.pdb
 C:\Users\dolph\Desktop\CS114-Group-Project-Polished-Pre-Master\Arcade\Arcade\obj\Debug\Arcade.NumberShuffle.resources
+C:\Users\dolph\OneDrive - SNHU\CS114\Final Project\CS114-Group-Project-Polished-Pre-master\Arcade\Arcade\obj\Debug\Arcade.NumberShuffle.resources
