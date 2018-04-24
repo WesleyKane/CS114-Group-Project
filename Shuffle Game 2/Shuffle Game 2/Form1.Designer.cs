@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Box4 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +52,10 @@
             this.Box14 = new System.Windows.Forms.PictureBox();
             this.Box15 = new System.Windows.Forms.PictureBox();
             this.Box16 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.startToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.Box4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box12)).BeginInit();
@@ -69,30 +72,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.Box14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box16)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Box4
             // 
             this.Box4.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.logro_11;
             this.Box4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box4.Location = new System.Drawing.Point(398, 156);
-            this.Box4.Margin = new System.Windows.Forms.Padding(2);
+            this.Box4.Location = new System.Drawing.Point(597, 244);
             this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(118, 98);
+            this.Box4.Size = new System.Drawing.Size(177, 153);
             this.Box4.TabIndex = 0;
             this.Box4.TabStop = false;
             this.Box4.Click += new System.EventHandler(this.Box4_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Yellow;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(564, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // startToolStripMenuItem
             // 
@@ -111,16 +103,14 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Box10
             // 
             this.Box10.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.image;
             this.Box10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box10.Location = new System.Drawing.Point(154, 359);
-            this.Box10.Margin = new System.Windows.Forms.Padding(2);
+            this.Box10.Location = new System.Drawing.Point(231, 561);
             this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(118, 98);
+            this.Box10.Size = new System.Drawing.Size(177, 153);
             this.Box10.TabIndex = 2;
             this.Box10.TabStop = false;
             this.Box10.Click += new System.EventHandler(this.Box10_Click);
@@ -130,10 +120,9 @@
             this.Box12.BackColor = System.Drawing.Color.Yellow;
             this.Box12.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.images;
             this.Box12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box12.Location = new System.Drawing.Point(398, 359);
-            this.Box12.Margin = new System.Windows.Forms.Padding(2);
+            this.Box12.Location = new System.Drawing.Point(597, 561);
             this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(118, 98);
+            this.Box12.Size = new System.Drawing.Size(177, 153);
             this.Box12.TabIndex = 4;
             this.Box12.TabStop = false;
             this.Box12.Click += new System.EventHandler(this.Box12_Click);
@@ -142,10 +131,9 @@
             // 
             this.Box5.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.fire;
             this.Box5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box5.Location = new System.Drawing.Point(32, 257);
-            this.Box5.Margin = new System.Windows.Forms.Padding(2);
+            this.Box5.Location = new System.Drawing.Point(48, 402);
             this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(118, 98);
+            this.Box5.Size = new System.Drawing.Size(177, 153);
             this.Box5.TabIndex = 7;
             this.Box5.TabStop = false;
             this.Box5.Click += new System.EventHandler(this.Box5_Click);
@@ -154,10 +142,9 @@
             // 
             this.Box11.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.key;
             this.Box11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box11.Location = new System.Drawing.Point(276, 359);
-            this.Box11.Margin = new System.Windows.Forms.Padding(2);
+            this.Box11.Location = new System.Drawing.Point(414, 561);
             this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(118, 98);
+            this.Box11.Size = new System.Drawing.Size(177, 153);
             this.Box11.TabIndex = 6;
             this.Box11.TabStop = false;
             this.Box11.Click += new System.EventHandler(this.Box11_Click);
@@ -166,10 +153,9 @@
             // 
             this.Box9.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115190_hi;
             this.Box9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box9.Location = new System.Drawing.Point(32, 359);
-            this.Box9.Margin = new System.Windows.Forms.Padding(2);
+            this.Box9.Location = new System.Drawing.Point(48, 561);
             this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(118, 98);
+            this.Box9.Size = new System.Drawing.Size(177, 153);
             this.Box9.TabIndex = 12;
             this.Box9.TabStop = false;
             this.Box9.Click += new System.EventHandler(this.Box9_Click);
@@ -178,10 +164,9 @@
             // 
             this.Box3.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115192_hi;
             this.Box3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box3.Location = new System.Drawing.Point(276, 156);
-            this.Box3.Margin = new System.Windows.Forms.Padding(2);
+            this.Box3.Location = new System.Drawing.Point(414, 244);
             this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(118, 98);
+            this.Box3.Size = new System.Drawing.Size(177, 153);
             this.Box3.TabIndex = 11;
             this.Box3.TabStop = false;
             this.Box3.Click += new System.EventHandler(this.Box3_Click);
@@ -190,10 +175,9 @@
             // 
             this.Box2.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.logro_19;
             this.Box2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box2.Location = new System.Drawing.Point(154, 156);
-            this.Box2.Margin = new System.Windows.Forms.Padding(2);
+            this.Box2.Location = new System.Drawing.Point(231, 244);
             this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(118, 98);
+            this.Box2.Size = new System.Drawing.Size(177, 153);
             this.Box2.TabIndex = 10;
             this.Box2.TabStop = false;
             this.Box2.Click += new System.EventHandler(this.Box2_Click);
@@ -202,10 +186,9 @@
             // 
             this.Box1.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.thN128KJB9;
             this.Box1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box1.Location = new System.Drawing.Point(32, 156);
-            this.Box1.Margin = new System.Windows.Forms.Padding(2);
+            this.Box1.Location = new System.Drawing.Point(48, 244);
             this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(118, 98);
+            this.Box1.Size = new System.Drawing.Size(177, 153);
             this.Box1.TabIndex = 9;
             this.Box1.TabStop = false;
             this.Box1.Click += new System.EventHandler(this.Box1_Click);
@@ -214,34 +197,31 @@
             // 
             this.Box8.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115194_hi;
             this.Box8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box8.Location = new System.Drawing.Point(398, 257);
-            this.Box8.Margin = new System.Windows.Forms.Padding(2);
+            this.Box8.Location = new System.Drawing.Point(597, 402);
             this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(118, 98);
+            this.Box8.Size = new System.Drawing.Size(177, 153);
             this.Box8.TabIndex = 16;
             this.Box8.TabStop = false;
             this.Box8.Click += new System.EventHandler(this.Box8_Click);
             // 
             // Box7
             // 
-            this.Box7.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115204_hi1;
+            this.Box7.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115193_hi;
             this.Box7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box7.Location = new System.Drawing.Point(276, 257);
-            this.Box7.Margin = new System.Windows.Forms.Padding(2);
+            this.Box7.Location = new System.Drawing.Point(414, 402);
             this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(118, 98);
+            this.Box7.Size = new System.Drawing.Size(177, 153);
             this.Box7.TabIndex = 15;
             this.Box7.TabStop = false;
             this.Box7.Click += new System.EventHandler(this.Box7_Click);
             // 
             // Box6
             // 
-            this.Box6.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115193_hi;
+            this.Box6.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115191_hi;
             this.Box6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box6.Location = new System.Drawing.Point(154, 257);
-            this.Box6.Margin = new System.Windows.Forms.Padding(2);
+            this.Box6.Location = new System.Drawing.Point(231, 402);
             this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(118, 98);
+            this.Box6.Size = new System.Drawing.Size(177, 153);
             this.Box6.TabIndex = 14;
             this.Box6.TabStop = false;
             this.Box6.Click += new System.EventHandler(this.Box6_Click);
@@ -251,10 +231,9 @@
             this.button17.BackColor = System.Drawing.Color.Blue;
             this.button17.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.Color.Yellow;
-            this.button17.Location = new System.Drawing.Point(193, 54);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
+            this.button17.Location = new System.Drawing.Point(290, 84);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(166, 79);
+            this.button17.Size = new System.Drawing.Size(249, 123);
             this.button17.TabIndex = 21;
             this.button17.Text = "Start Game";
             this.button17.UseVisualStyleBackColor = false;
@@ -264,12 +243,11 @@
             // 
             this.clicks_label.AutoSize = true;
             this.clicks_label.BackColor = System.Drawing.Color.Transparent;
-            this.clicks_label.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clicks_label.Font = new System.Drawing.Font("Showcard Gothic", 13.875F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clicks_label.ForeColor = System.Drawing.Color.Yellow;
-            this.clicks_label.Location = new System.Drawing.Point(26, 634);
-            this.clicks_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.clicks_label.Location = new System.Drawing.Point(40, 1000);
             this.clicks_label.Name = "clicks_label";
-            this.clicks_label.Size = new System.Drawing.Size(114, 33);
+            this.clicks_label.Size = new System.Drawing.Size(157, 46);
             this.clicks_label.TabIndex = 23;
             this.clicks_label.Text = "Clicks:";
             // 
@@ -278,18 +256,21 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(190, 591);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(285, 923);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 17);
+            this.label16.Size = new System.Drawing.Size(0, 25);
             this.label16.TabIndex = 39;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 634);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(223, 1000);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(146, 46);
             this.label2.TabIndex = 40;
             this.label2.Text = "label2";
             // 
@@ -297,53 +278,88 @@
             // 
             this.Box13.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115177_hi1;
             this.Box13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box13.Location = new System.Drawing.Point(32, 461);
-            this.Box13.Margin = new System.Windows.Forms.Padding(2);
+            this.Box13.Location = new System.Drawing.Point(48, 720);
             this.Box13.Name = "Box13";
-            this.Box13.Size = new System.Drawing.Size(118, 98);
+            this.Box13.Size = new System.Drawing.Size(177, 153);
             this.Box13.TabIndex = 41;
             this.Box13.TabStop = false;
+            this.Box13.Click += new System.EventHandler(this.Box13_Click);
             // 
             // Box14
             // 
             this.Box14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Box14.BackgroundImage")));
             this.Box14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box14.Location = new System.Drawing.Point(154, 461);
-            this.Box14.Margin = new System.Windows.Forms.Padding(2);
+            this.Box14.Location = new System.Drawing.Point(231, 720);
             this.Box14.Name = "Box14";
-            this.Box14.Size = new System.Drawing.Size(118, 98);
+            this.Box14.Size = new System.Drawing.Size(177, 153);
             this.Box14.TabIndex = 42;
             this.Box14.TabStop = false;
+            this.Box14.Click += new System.EventHandler(this.Box14_Click);
             // 
             // Box15
             // 
             this.Box15.BackgroundImage = global::Shuffle_Game_2.Properties.Resources._115176_hi;
             this.Box15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box15.Location = new System.Drawing.Point(276, 461);
-            this.Box15.Margin = new System.Windows.Forms.Padding(2);
+            this.Box15.Location = new System.Drawing.Point(414, 720);
             this.Box15.Name = "Box15";
-            this.Box15.Size = new System.Drawing.Size(118, 98);
+            this.Box15.Size = new System.Drawing.Size(177, 153);
             this.Box15.TabIndex = 43;
             this.Box15.TabStop = false;
             this.Box15.Click += new System.EventHandler(this.Box15_Click);
             // 
             // Box16
             // 
+            this.Box16.BackColor = System.Drawing.Color.Yellow;
             this.Box16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Box16.Location = new System.Drawing.Point(398, 461);
-            this.Box16.Margin = new System.Windows.Forms.Padding(2);
+            this.Box16.Location = new System.Drawing.Point(597, 720);
             this.Box16.Name = "Box16";
-            this.Box16.Size = new System.Drawing.Size(118, 98);
+            this.Box16.Size = new System.Drawing.Size(177, 153);
             this.Box16.TabIndex = 44;
             this.Box16.TabStop = false;
+            this.Box16.Click += new System.EventHandler(this.Box16_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Yellow;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startToolStripMenuItem1,
+            this.resetToolStripMenuItem1,
+            this.exitToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(846, 42);
+            this.menuStrip1.TabIndex = 45;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // startToolStripMenuItem1
+            // 
+            this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
+            this.startToolStripMenuItem1.Size = new System.Drawing.Size(75, 38);
+            this.startToolStripMenuItem1.Text = "Start";
+            this.startToolStripMenuItem1.Click += new System.EventHandler(this.startToolStripMenuItem1_Click);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(64, 38);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click_1);
+            // 
+            // resetToolStripMenuItem1
+            // 
+            this.resetToolStripMenuItem1.Name = "resetToolStripMenuItem1";
+            this.resetToolStripMenuItem1.Size = new System.Drawing.Size(84, 38);
+            this.resetToolStripMenuItem1.Text = "Reset";
+            this.resetToolStripMenuItem1.Click += new System.EventHandler(this.resetToolStripMenuItem1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Shuffle_Game_2.Properties.Resources.Grid_pac_man_8970124_1680_1050;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(564, 747);
+            this.ClientSize = new System.Drawing.Size(846, 1167);
             this.Controls.Add(this.Box16);
             this.Controls.Add(this.Box15);
             this.Controls.Add(this.Box14);
@@ -366,8 +382,6 @@
             this.Controls.Add(this.Box4);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "PacMan Shuffle";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -387,6 +401,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Box14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box16)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,7 +411,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox Box4;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -418,6 +433,10 @@
         private System.Windows.Forms.PictureBox Box14;
         private System.Windows.Forms.PictureBox Box15;
         private System.Windows.Forms.PictureBox Box16;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem1;
     }
 }
 
