@@ -1,0 +1,9 @@
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\bin\Debug\BATTLSHIP2.exe.config
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\bin\Debug\BATTLSHIP2.exe
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\bin\Debug\BATTLSHIP2.pdb
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.csprojResolveAssemblyReference.cache
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.Properties.Resources.resources
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.csproj.GenerateResource.Cache
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.exe
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.pdb
+T:\Profiles\Users\luciana.albers\OneDrive - SNHU\A group project trials\BATTLSHIP2\BATTLSHIP2\obj\Debug\BATTLSHIP2.BattleShip.resources
