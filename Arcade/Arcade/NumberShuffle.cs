@@ -72,33 +72,23 @@ namespace Arcade
             images[12] = Properties.Resources.images;
             Box12.SizeMode = PictureBoxSizeMode.StretchImage;
             images[13] = Properties.Resources._115177_hi;
-            Box12.SizeMode = PictureBoxSizeMode.StretchImage;
-            images[14] = Properties.Resources._115175_hi;
-            Box12.SizeMode = PictureBoxSizeMode.StretchImage;
-            images[15] = Properties.Resources._115176_hi;
-            Box12.SizeMode = PictureBoxSizeMode.StretchImage;
-            images[16] = Properties.Resources.eating;
-            Box12.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
-            /*
-            
-            Box13.Image = Properties.Resources.orange;
             Box13.SizeMode = PictureBoxSizeMode.StretchImage;
-            Box14.Image = Properties.Resources._115191_hi;
+            images[14] = Properties.Resources._115175_hi;
             Box14.SizeMode = PictureBoxSizeMode.StretchImage;
-            Box15.Image = Properties.Resources.blue;
+            images[15] = Properties.Resources._115176_hi;
             Box15.SizeMode = PictureBoxSizeMode.StretchImage;
-            Box16.Image = Properties.Resources.eating;
+            images[16] = Properties.Resources.eating;
             Box16.SizeMode = PictureBoxSizeMode.StretchImage;
-            */
+
+
+
         }
 
         //checks to see if user has solved the puzzle by checking to see if all of the buttons went back to their original spot
         public void CheckSolve()
         {
             num = num + 1;
-            label2.Text = num + " click";
+            label1.Text = num+ " clicks";
 
             if (Box1.Image == images[1] && Box2.Image == images[2] && Box3.Image == images[3] && Box4.Image == images[4] && Box5.Image == images[5] && Box6.Image == images[6] && Box7.Image == images[7] && Box8.Image == images[8] && Box9.Image == images[9] && Box10.Image == images[10] && Box11.Image == images[11] && Box12.Image == images[12])
             {
@@ -107,7 +97,7 @@ namespace Arcade
         }
 
         //checks movement abilities of each of the picture boxes
-        private void Box1_Click_1(object sender, EventArgs e)
+        private void Box1_Click(object sender, EventArgs e)
         {
             if (Box2.Image == images[16])
             {
@@ -127,11 +117,8 @@ namespace Arcade
             CheckSolve();
         }
 
-
-
-        private void Box2_Click_1(object sender, EventArgs e)
+        private void Box2_Click(object sender, EventArgs e)
         {
-
             if (Box1.Image == images[16])
             {
                 Box1.Image = Box2.Image;
@@ -158,7 +145,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box3_Click_1(object sender, EventArgs e)
+        private void Box3_Click(object sender, EventArgs e)
         {
             if (Box2.Image == images[16])
             {
@@ -186,7 +173,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box4_Click_1(object sender, EventArgs e)
+        private void Box4_Click(object sender, EventArgs e)
         {
             if (Box3.Image == images[16])
             {
@@ -205,9 +192,9 @@ namespace Arcade
             }
 
             CheckSolve();
-        }
 
-        private void Box5_Click_1(object sender, EventArgs e)
+        }
+        private void Box5_Click(object sender, EventArgs e)
         {
             if (Box1.Image == images[16])
             {
@@ -235,7 +222,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box6_Click_1(object sender, EventArgs e)
+        private void Box6_Click(object sender, EventArgs e)
         {
             if (Box7.Image == images[16])
             {
@@ -271,7 +258,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box7_Click_1(object sender, EventArgs e)
+        private void Box7_Click(object sender, EventArgs e)
         {
             if (Box6.Image == images[16])
             {
@@ -307,7 +294,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box8_Click_1(object sender, EventArgs e)
+        private void Box8_Click(object sender, EventArgs e)
         {
             if (Box4.Image == images[16])
             {
@@ -335,7 +322,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box9_Click_1(object sender, EventArgs e)
+        private void Box9_Click(object sender, EventArgs e)
         {
             if (Box5.Image == images[16])
             {
@@ -362,9 +349,9 @@ namespace Arcade
             }
 
             CheckSolve();
-        }
 
-        private void Box10_Click_1(object sender, EventArgs e)
+        }
+        private void Box10_Click(object sender, EventArgs e)
         {
             if (Box9.Image == images[16])
             {
@@ -400,7 +387,7 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box11_Click_1(object sender, EventArgs e)
+        private void Box11_Click(object sender, EventArgs e)
         {
             if (Box10.Image == images[16])
             {
@@ -437,8 +424,9 @@ namespace Arcade
             CheckSolve();
         }
 
-        private void Box12_Click_1(object sender, EventArgs e)
+        private void Box12_Click(object sender, EventArgs e)
         {
+            
             if (Box11.Image == images[16])
             {
                 Box11.Image = Box12.Image;
@@ -446,7 +434,7 @@ namespace Arcade
                 Box12.Image = images[16];
                 Box12.BackColor = Color.White;
             }
-
+            
             if (Box8.Image == images[16])
             {
                 Box8.Image = Box12.Image;
@@ -454,35 +442,115 @@ namespace Arcade
                 Box12.Image = images[16];
                 Box12.BackColor = Color.White;
             }
-
-            if (Box16.Image == images[16])
+            
+           if (Box16.Image == images[16])
             {
                 Box16.Image = Box12.Image;
                 Box16.BackColor = Color.Yellow;
                 Box12.Image = images[16];
                 Box12.BackColor = Color.White;
             }
+            
+
             CheckSolve();
+
+
+       
         }
 
         private void Box13_Click(object sender, EventArgs e)
         {
+            
+            if (Box9.Image == images[16])
+            {
+                Box9.Image = Box13.Image;
+                Box9.BackColor = Color.Yellow;
+                Box13.Image = images[16];
+                Box13.BackColor = Color.White;
+            }
+
+            if (Box14.Image == images[16])
+            {
+                Box14.Image = Box13.Image;
+                Box14.BackColor = Color.Yellow;
+                Box13.Image = images[16];
+                Box13.BackColor = Color.White;
+            }
+
+            CheckSolve();
 
         }
 
         private void Box14_Click(object sender, EventArgs e)
         {
 
+            if (Box13.Image == images[16])
+            {
+                Box13.Image = Box14.Image;
+                Box13.BackColor = Color.Yellow;
+                Box14.Image = images[16];
+                Box14.BackColor = Color.White;
+            }
+            if (Box10.Image == images[16])
+            {
+                Box10.Image = Box14.Image;
+                Box10.BackColor = Color.Yellow;
+                Box14.Image = images[16];
+                Box14.BackColor = Color.White;
+            }
+            if (Box15.Image == images[16])
+            {
+                Box15.Image = Box14.Image;
+                Box15.BackColor = Color.Yellow;
+                Box14.Image = images[16];
+                Box14.BackColor = Color.White;
+            }
+            CheckSolve();
         }
 
-        private void Box15_Click_1(object sender, EventArgs e)
+        private void Box15_Click(object sender, EventArgs e)
         {
-
+            if (Box14.Image == images[16])
+            {
+                Box14.Image = Box15.Image;
+                Box14.BackColor = Color.Yellow;
+                Box15.Image = images[16];
+                Box15.BackColor = Color.White;
+            }
+            if (Box11.Image == images[16])
+            {
+                Box11.Image = Box15.Image;
+                Box11.BackColor = Color.Yellow;
+                Box15.Image = images[16];
+                Box15.BackColor = Color.White;
+            }
+            if (Box16.Image == images[16])
+            {
+                Box16.Image = Box15.Image;
+                Box16.BackColor = Color.Yellow;
+                Box15.Image = images[16];
+                Box15.BackColor = Color.White;
+            }
+            CheckSolve();
         }
 
         private void Box16_Click(object sender, EventArgs e)
         {
-
+            if (Box15.Image == images[16])
+            {
+                Box15.Image = Box16.Image;
+                Box15.BackColor = Color.Yellow;
+                Box16.Image = images[16];
+                Box16.BackColor = Color.White;
+            }
+            if (Box12.Image == images[16])
+            {
+                Box12.Image = Box16.Image;
+                Box12.BackColor = Color.Yellow;
+                Box16.Image = images[16];
+                Box16.BackColor = Color.White;
+            }
+            CheckSolve();
         }
 
         public void Shuffle()
@@ -518,7 +586,7 @@ namespace Arcade
 
 
 
-            } while (i <= 11);
+            } while (i <= 15);
 
             Box1.Image = (images[a[1]]);
             Box2.Image = (images[a[2]]);
@@ -538,7 +606,7 @@ namespace Arcade
             Box16.Image = (images[16]);
 
 
-            //int num = 0;
+            num = 0;
 
 
 
@@ -550,14 +618,51 @@ namespace Arcade
             Shuffle();
         }
         //exit button closes program
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void startToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Shuffle();
+        }
+
+        private void exitToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        private void resetToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
 
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
-       
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clicks_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void startToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Shuffle();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
+
+        private void resetToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Shuffle();
+        }
     }
     
 }
