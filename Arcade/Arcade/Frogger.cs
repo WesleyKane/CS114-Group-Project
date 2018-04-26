@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
+/// <Sources>
+/// Images: https://freesound.org/
+/// Sounds: https://www.classic-retro-games.com/games/platform/frogger-477
+/// </Sources>
+
 namespace Arcade
 {
     public partial class Frogger : Form
