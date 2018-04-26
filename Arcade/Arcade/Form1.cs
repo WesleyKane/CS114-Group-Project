@@ -52,7 +52,12 @@ namespace Arcade
             menuMusic.Stop();
             asteroids.Show();
         }
-
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            NumberShuffle shuffle = new NumberShuffle();
+            menuMusic.Stop();
+            shuffle.Show();
+        }
         private void Exit_Click(object sender, EventArgs e) // exit button
         {
             Application.Exit();
@@ -68,9 +73,6 @@ namespace Arcade
 
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
